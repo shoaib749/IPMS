@@ -3,10 +3,10 @@ package com.unicon.ipms;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -14,11 +14,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
-import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -29,6 +27,7 @@ import java.util.Map;
 public class Create_Info extends AppCompatActivity {
     private Button submit;
     private EditText ET_fname,ET_lname,ET_email,ET_pass,ET_confirm_pass;
+    private TextView TV_login;
     ProgressDialog progressDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,16 +41,25 @@ public class Create_Info extends AppCompatActivity {
         ET_confirm_pass = (EditText) findViewById(R.id.Confirm_Password);
         progressDialog = new ProgressDialog(this);
         submit = (Button) findViewById(R.id.submit);
+        TV_login = (TextView)findViewById(R.id.have_account);
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                userRegiser();
+                userRegister();
+            }
+        });
+        TV_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Create_Info.this,Sign_in.class);
+                startActivity(intent);
+                finish();
             }
         });
 
     }
-    public void userRegiser(){
+    public void userRegister(){
         String fname = ET_fname.getText().toString().trim();
         String lname = ET_lname.getText().toString().trim();
         String email = ET_email.getText().toString().trim();
