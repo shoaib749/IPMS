@@ -2,21 +2,35 @@ package com.unicon.ipms;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Create_Info extends AppCompatActivity {
-    private Button submit;
+    private Button sub;
+    private TextView Tv_login;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_info);
-        submit = findViewById(R.id.submit);
-        submit.setOnClickListener(view -> openActivity3());
+        sub = findViewById(R.id.submit);
+        Tv_login = findViewById(R.id.have_account);
+        sub.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Create_Info.this,More_Info. class);
+                startActivity(intent);
+            }
+        });
+        Tv_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Create_Info.this,More_Info. class);
+                startActivity(intent);
+            }
+        });
     }
-    public void openActivity3(){
-        Intent intent =new Intent(this,Sign_in.class);
-        startActivity(intent);
-    }
-    }
+}
