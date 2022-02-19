@@ -166,7 +166,7 @@ public class sharepref_moreInfo {
         SharedPreferences sharedPreferences = ctx.getSharedPreferences(SHARED_PREF_NAME,Context.MODE_PRIVATE);
         return sharedPreferences.getString(KEY_USER_admission,null);
     }
-    public String getssgpa1(){
+    public String getsgpa1(){
         SharedPreferences sharedPreferences = ctx.getSharedPreferences(SHARED_PREF_NAME,Context.MODE_PRIVATE);
         return sharedPreferences.getString(KEY_USER_sgpa1,null);
     }
@@ -182,19 +182,19 @@ public class sharepref_moreInfo {
         SharedPreferences sharedPreferences = ctx.getSharedPreferences(SHARED_PREF_NAME,Context.MODE_PRIVATE);
         return sharedPreferences.getString(KEY_USER_sgpa4,null);
     }
-    public String getspga5(){
+    public String getsgpa5(){
         SharedPreferences sharedPreferences = ctx.getSharedPreferences(SHARED_PREF_NAME,Context.MODE_PRIVATE);
         return sharedPreferences.getString(KEY_USER_sgpa5,null);
     }
-    public String getspga6(){
+    public String getsgpa6(){
         SharedPreferences sharedPreferences = ctx.getSharedPreferences(SHARED_PREF_NAME,Context.MODE_PRIVATE);
         return sharedPreferences.getString(KEY_USER_sgpa6,null);
     }
-    public String getspga7(){
+    public String getsgpa7(){
         SharedPreferences sharedPreferences = ctx.getSharedPreferences(SHARED_PREF_NAME,Context.MODE_PRIVATE);
         return sharedPreferences.getString(KEY_USER_sgpa7,null);
     }
-    public String getspga8(){
+    public String getsgpa8(){
         SharedPreferences sharedPreferences = ctx.getSharedPreferences(SHARED_PREF_NAME,Context.MODE_PRIVATE);
         return sharedPreferences.getString(KEY_USER_sgpa8,null);
     }
@@ -227,40 +227,4 @@ public class sharepref_moreInfo {
         return  sharedPreferences.getString(KEY_USER_gap,null);
     }
 
-
-//    public boolean userLogin(String fname,String lname,String email){
-//        SharedPreferences sharedPreferences = ctx.getSharedPreferences(SHARED_PREF_NAME,Context.MODE_PRIVATE);
-//        SharedPreferences.Editor editor = sharedPreferences.edit();
-//
-//        editor.putString(KEY_USER_FNAME,fname);
-//        editor.putString(KEY_USER_LNAME,lname);
-//        editor.putString(KEY_USER_EMAIL,email);
-//        editor.apply();
-//
-//        return true;
-//    }
-//    public boolean islogedIn(){
-//        SharedPreferences sharedPreferences = ctx.getSharedPreferences(SHARED_PREF_NAME,Context.MODE_PRIVATE);
-//        if(sharedPreferences.getString(KEY_USER_EMAIL,null)!=null){
-//            return true;
-//        }
-//        return false;
-//
-//    }
-//    public boolean logout(){
-//        SharedPreferences sharedPreferences = ctx.getSharedPreferences(SHARED_PREF_NAME,Context.MODE_PRIVATE);
-//        SharedPreferences.Editor editor = sharedPreferences.edit();
-//        editor.clear();
-//        editor.apply();
-//        return true;
-//    }
-//
-//    public String getUsername(){
-//        SharedPreferences sharedPreferences = ctx.getSharedPreferences(SHARED_PREF_NAME,Context.MODE_PRIVATE);
-//        return sharedPreferences.getString(KEY_USER_EMAIL,null);
-//    }
-//    public String getEmail(){
-//        SharedPreferences sharedPreferences = ctx.getSharedPreferences(SHARED_PREF_NAME,Context.MODE_PRIVATE);
-//        return sharedPreferences.getString(KEY_USER_EMAIL,null);
-//    }
 }
