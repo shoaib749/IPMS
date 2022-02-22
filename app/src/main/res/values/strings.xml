@@ -27,4 +27,10 @@
     <string name="semester">Semester</string>
     <string name="next">Next</string>
     <string name="student_mobile_number">Student Mobile Number</string>
+    <string name="ssc_completion_year">SSC Completion Year</string>
+    <string name="hsc_completion_year">HSC Completion Year</string>
+    <string name="hsc_percentage">HSC Percentage</string>
+    <string name="ssc_percentage">SSC Percentage</string>
+    <string name="diploma_completion_year">Diploma Completion Year</string>
+    <string name="previous">Previous</string>
 </resources>

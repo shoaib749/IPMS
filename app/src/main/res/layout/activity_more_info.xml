@@ -16,6 +16,7 @@
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/First_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,15 +25,15 @@
         android:id="@+id/First_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:text="@string/first_name"
         android:textColor="@color/black"
         android:textSize="16sp"
+        android:layout_marginTop="70dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.192"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/account_head" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/First_Name"
@@ -237,7 +238,8 @@
         app:layout_constraintEnd_toEndOf="@+id/Department_name"
         app:layout_constraintHeight_percent="0.06"
         app:layout_constraintStart_toStartOf="@+id/Department_name"
-        app:layout_constraintTop_toBottomOf="@+id/Registration_no_text" />
+        app:layout_constraintTop_toBottomOf="@+id/Registration_no_text"
+        android:autofillHints="" />
 
     <TextView
         android:id="@id/Semester"
@@ -272,17 +274,20 @@
         app:layout_constraintTop_toBottomOf="@+id/Registration_no" />
 
     <Button
-        android:id="@+id/next"
-        android:layout_width="wrap_content"
+        android:id="@+id/button_next"
+        android:layout_width="110dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="21dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="30dp"
         android:background="@drawable/curve_button"
         android:text="@string/next"
+
+        android:layout_marginBottom="50dp"
         android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintHorizontal_bias="0.992"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Semester" />
+        app:layout_constraintTop_toBottomOf="@+id/Semester"
+        app:layout_constraintVertical_bias="0.569" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
