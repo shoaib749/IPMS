@@ -3,6 +3,7 @@ package com.unicon.ipms;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -29,6 +30,7 @@ public class Create_Info extends AppCompatActivity {
     private EditText ET_fname,ET_lname,ET_email,ET_pass,ET_confirm_pass;
     private TextView TV_login;
     ProgressDialog progressDialog;
+    Functions f;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,11 +44,17 @@ public class Create_Info extends AppCompatActivity {
         progressDialog = new ProgressDialog(this);
         submit = (Button) findViewById(R.id.submit);
         TV_login = (TextView)findViewById(R.id.have_account);
+        f=new Functions();
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                userRegister();
+                if(validations());
+                    else{
+                    userRegister();
+                }
+
+
             }
         });
         TV_login.setOnClickListener(new View.OnClickListener() {
@@ -111,5 +119,49 @@ public class Create_Info extends AppCompatActivity {
         };
             requestHandler.getInstance(this).addToRequestQueue(stringRequest);
     }
+        private boolean validations()
+        {
 
+            /*FIRST NAME*/
+            if (!f.isStringOnlyAlphabet(ET_fname.getText().toString())) {
+                if (TextUtils.isEmpty(ET_fname.getText().toString()))
+                {
+                    Toast.makeText(Create_Info.this, "First Name cannot be empty", Toast.LENGTH_LONG).show();
+                }
+                else{
+                    Toast.makeText(Create_Info.this, "First Name can only contain alphabets", Toast.LENGTH_LONG).show();
+                }
+
+                return true;
+            }
+            else if (f.invalidNoOfChars(ET_fname.getText().toString(),16))
+            {
+                Toast.makeText(Create_Info.this, "First Name cannot contain more than 16 alphabets", Toast.LENGTH_LONG).show();
+                return  true;
+            }
+            /*LAST NAME*/
+            if (!f.isStringOnlyAlphabet(ET_lname.getText().toString())) {
+                if (TextUtils.isEmpty(ET_lname.getText().toString()))
+                {
+                    Toast.makeText(Create_Info.this, "Last Name cannot be empty", Toast.LENGTH_LONG).show();
+                }
+                else{
+                    Toast.makeText(Create_Info.this, "Last Name can only contain alphabets", Toast.LENGTH_LONG).show();
+                }
+                return true;
+            }
+            else if (f.invalidNoOfChars(ET_lname.getText().toString(),16))
+            {
+                Toast.makeText(Create_Info.this, "Last Name cannot contain more than 16 alphabets", Toast.LENGTH_LONG).show();
+                return  true;
+            }
+            /*Email NAME*/
+            if(!f.invalidEmail(ET_email.getText().toString()))
+            {
+                Toast.makeText(Create_Info.this, "Invalid Email", Toast.LENGTH_LONG).show();
+                return  true;
+            }
+            return false;
+
+        }
     }

@@ -1,5 +1,6 @@
 package com.unicon.ipms;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,12 +23,15 @@ public class More_Info extends AppCompatActivity {
         ET_parentNo = (EditText) findViewById(R.id.Parent_no);
         ET_dept = (EditText) findViewById(R.id.Department_name);
         ET_registration = (EditText) findViewById(R.id.Registration_no);
-        ET_semester = (EditText) findViewById(R.id.Semester);
-
+        ET_semester = (EditText) findViewById(R.id.Semester_ET);
+        B_next = (Button) findViewById(R.id.button_next);
         B_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 getData();
+                Intent intent = new Intent(More_Info.this,More_info_2.class);
+                startActivity(intent);
             }
         });
     }
