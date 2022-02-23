@@ -13,6 +13,9 @@
         android:theme="@style/Theme.IPMS"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".admin_dashboard"
+            android:exported="false" />
+        <activity
             android:name=".admin_login"
             android:exported="false" />
         <activity
