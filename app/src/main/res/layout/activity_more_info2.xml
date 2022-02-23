@@ -7,20 +7,21 @@
     tools:context=".More_info_2"
     android:background="@color/background">
 
+
     <TextView
         android:id="@+id/ssc_year_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="60dp"
         android:text="@string/ssc_completion_year"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <EditText
         android:id="@+id/ssc_year"
@@ -29,6 +30,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:autofillHints="Name"
+        app:layout_constraintHeight_percent="0.06"
         android:background="@drawable/name"
         android:inputType="number"
         android:paddingStart="20dp"
@@ -50,7 +52,8 @@
         android:layout_marginEnd="30dp"
         android:autofillHints="Name"
         android:background="@drawable/name"
-        android:inputType="textPersonName"
+        app:layout_constraintHeight_percent="0.06"
+        android:inputType="numberDecimal"
         android:paddingStart="20dp"
         android:paddingTop="10dp"
         android:paddingEnd="10dp"
@@ -65,13 +68,14 @@
         android:id="@+id/hsc_year_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="7dp"
         android:text="@string/hsc_completion_year"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ssc_percent" />
 
@@ -82,6 +86,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:autofillHints="Name"
+        app:layout_constraintHeight_percent="0.06"
         android:background="@drawable/name"
         android:inputType="number"
         android:paddingStart="20dp"
@@ -99,13 +104,14 @@
         android:id="@+id/hsc_percent_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="7dp"
         android:text="@string/hsc_percentage"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hsc_year" />
 
@@ -113,13 +119,14 @@
         android:id="@+id/ssc_percent_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="7dp"
         android:text="@string/ssc_percentage"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ssc_year" />
 
@@ -130,8 +137,9 @@
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:autofillHints="Name"
+        app:layout_constraintHeight_percent="0.06"
         android:background="@drawable/name"
-        android:inputType="textPersonName"
+        android:inputType="numberDecimal"
         android:paddingStart="20dp"
         android:paddingTop="10dp"
         android:paddingEnd="10dp"
@@ -147,13 +155,14 @@
         android:id="@+id/Diploma_year_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="7dp"
         android:text="@string/diploma_completion_year"
         android:textColor="@color/black"
-        android:layout_marginTop="10dp"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/diploma_year" />
 
@@ -161,13 +170,14 @@
         android:id="@+id/Diploma_percentage_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/diploma_completion_year"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/diploma_percentage"
         android:textColor="@color/black"
         android:textSize="16sp"
-        android:layout_marginTop="10dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hsc_percent" />
 
@@ -179,7 +189,8 @@
         android:layout_marginEnd="30dp"
         android:autofillHints="Name"
         android:background="@drawable/name"
-        android:inputType="textPersonName"
+        android:inputType="number"
+        app:layout_constraintHeight_percent="0.06"
         android:paddingStart="20dp"
         android:paddingTop="10dp"
         android:paddingEnd="10dp"
@@ -197,6 +208,7 @@
         android:layout_height="0dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
+        app:layout_constraintHeight_percent="0.06"
         android:autofillHints="Name"
         android:background="@drawable/name"
         android:inputType="numberDecimal"
@@ -212,32 +224,32 @@
 
     <Button
         android:id="@+id/button_previous"
-        android:layout_width="110dp"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/curve_button"
-        android:text="Previous"
+        android:text="@string/previous"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/diploma_percent"
-        app:layout_constraintVertical_bias="0.975" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/button_next"
-        android:layout_width="110dp"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="156dp"
         android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/curve_button"
         android:text="@string/next"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.984"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/button_previous"
         app:layout_constraintTop_toBottomOf="@+id/diploma_percent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
