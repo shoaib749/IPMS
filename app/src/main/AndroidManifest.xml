@@ -13,6 +13,11 @@
         android:theme="@style/Theme.IPMS"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".admin_dashboard"
+            android:exported="false"
+            android:label="@string/title_activity_admin_dashboard"
+            android:theme="@style/Theme.IPMS.NoActionBar" />
+        <activity
             android:name=".admin_login"
             android:exported="false" />
         <activity
