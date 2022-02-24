@@ -7,14 +7,13 @@
         <item
             android:id="@+id/nav_placements"
             android:icon="@drawable/ic_folder"
-            android:title="@string/placements"/>
+            android:title="@string/placements" />
         <item
-            android:id="@+id/nav_internship"
+            android:id="@+id/nav_internships"
             android:icon="@drawable/ic_folder"
-
             android:title="@string/internships" />
         <item
-            android:id="@+id/nav_add_placements_details"
+            android:id="@+id/nav_add_placements"
             android:icon="@drawable/ic_folder"
             android:title="@string/add_placement_details" />
         <item

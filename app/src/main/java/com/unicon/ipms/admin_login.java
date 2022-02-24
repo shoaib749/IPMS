@@ -66,7 +66,7 @@ public class admin_login extends AppCompatActivity {
 
 
                     }else{
-                        Toast.makeText(admin_login.this,object.getString("message"),Toast.LENGTH_LONG).show();
+                        Toast.makeText(admin_login.this,object.getString("message")+" ",Toast.LENGTH_LONG).show();
                     }
 
                 } catch (JSONException e) {
@@ -78,7 +78,7 @@ public class admin_login extends AppCompatActivity {
             @Override
             public void onErrorResponse(VolleyError error) {
                 progressDialog.hide();
-                Toast.makeText(admin_login.this, error.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(admin_login.this, error.getMessage()+" ", Toast.LENGTH_SHORT).show();
             }
         }){
             @Nullable
