@@ -19,12 +19,9 @@
         <activity
             android:name=".admin_dashboard"
             android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".admin_dashboard"
-            android:exported="false"
-            android:label="@string/title_activity_admin_dashboard"
-            android:theme="@style/Theme.IPMS.NoActionBar" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
         <activity
             android:name=".admin_login"
             android:exported="false"

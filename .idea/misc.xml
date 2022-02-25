@@ -27,11 +27,18 @@
         <entry key="..\:/Users/Unicon/StudioProjects/IPMS_3/app/src/main/res/layout/activity_test_data.xml" value="0.1" />
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/drawable/curve_2.xml" value="0.2115" />
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/drawable/rectangle06.xml" value="0.2115" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_admin_dashboard.xml" value="0.1" />
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_admin_login.xml" value="0.1" />
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_more_info.xml" value="0.22" />
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_sign_in.xml" value="0.1802536231884058" />
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_splash_screen.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/fragment_add_placement_details.xml" value="0.1" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/fragment_gallery.xml" value="0.15806159420289856" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/fragment_internships.xml" value="0.1" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/frgament_check_student_profile.xml" value="0.1" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/menu/activity_main_drawer.xml" value="0.33" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/menu/admin_dashboard.xml" value="0.20102564102564102" />
       </map>
     </option>
   </component>

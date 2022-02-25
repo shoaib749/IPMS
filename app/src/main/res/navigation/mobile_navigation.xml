@@ -10,21 +10,28 @@
         android:name="com.unicon.ipms.ui.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
-
-    <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.unicon.ipms.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
     <fragment
         android:id="@+id/nav_placements"
         android:name="com.unicon.ipms.ui.placements.Placements_Fragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:label="@string/placements"
+        tools:layout="@layout/fragment_placements" />
+
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.unicon.ipms.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_internships"
+        android:name="com.unicon.ipms.ui.internships.Internships_Fragment"
+        android:label="@string/internships"
+        tools:layout="@layout/fragment_internships" />
+
+    <fragment
+        android:id="@+id/nav_add_placement_details"
+        android:name="com.unicon.ipms.ui.add_placement_details.add_placement_details"
+        android:label="@string/add_placement_details"
+        tools:layout="@layout/fragment_add_placement_details" />
+
+    <fragment
+        android:id="@+id/nav_check_student_profile"
+        android:name="com.unicon.ipms.ui.check_student_profile.check_student_profile"
+        android:label="@string/check_students_profile"
+        tools:layout="@layout/fragment_check_student_profile" />
+
 </navigation>

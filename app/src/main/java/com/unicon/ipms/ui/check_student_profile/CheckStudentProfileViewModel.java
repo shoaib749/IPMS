@@ -1,16 +1,15 @@
-package com.unicon.ipms.ui.gallery;
+package com.unicon.ipms.ui.check_student_profile;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class GalleryViewModel extends ViewModel {
-
+public class CheckStudentProfileViewModel extends ViewModel {
     private final MutableLiveData<String> mText;
 
-    public GalleryViewModel() {
+    public CheckStudentProfileViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is gallery fragment");
+        mText.setValue("This is check student details fragment");
     }
 
     public LiveData<String> getText() {

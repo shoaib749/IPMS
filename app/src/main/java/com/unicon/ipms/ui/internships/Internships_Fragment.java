@@ -1,4 +1,4 @@
-package com.unicon.ipms.ui.placements;
+package com.unicon.ipms.ui.internships;
 
 import androidx.lifecycle.ViewModelProvider;
 
@@ -14,30 +14,30 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.unicon.ipms.R;
-import com.unicon.ipms.databinding.FragmentGalleryBinding;
+import com.unicon.ipms.databinding.FragmentInternshipsBinding;
 import com.unicon.ipms.databinding.FragmentPlacementsBinding;
+import com.unicon.ipms.ui.placements.PlacementsViewModel;
 
-public class Placements_Fragment extends Fragment {
+public class Internships_Fragment extends Fragment {
 
-    private PlacementsViewModel mViewModel;
-    private FragmentPlacementsBinding binding;
+    private InternshipsViewModel mViewModel;
+    private FragmentInternshipsBinding binding;
 
-    public static Placements_Fragment newInstance() {
-        return new Placements_Fragment();
+    public static Internships_Fragment newInstance() {
+        return new Internships_Fragment();
     }
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         mViewModel =
-                new ViewModelProvider(this).get(PlacementsViewModel.class);
+                new ViewModelProvider(this).get(InternshipsViewModel.class);
 
-        binding = FragmentPlacementsBinding.inflate(inflater, container, false);
+        binding = FragmentInternshipsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textPlacements;
+        final TextView textView = binding.textInternships;
         mViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
-
 
 }

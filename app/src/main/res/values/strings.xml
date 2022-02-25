@@ -65,4 +65,9 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="placements">Placements</string>
+    <string name="internships">Internships</string>
+    <string name="add_placement_details">Add Placements Details</string>
+    <string name="check_students_profile">Check Students Profile</string>
+    <string name="notification">Notification</string>
 </resources>
