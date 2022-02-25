@@ -47,7 +47,6 @@ public class admin_login extends AppCompatActivity {
         });
     }
     public void getData(){
-
         String email_id,pass;
         email_id = ET_email_id.getText().toString().trim();
         pass = ET_pass.getText().toString().trim();
@@ -57,16 +56,15 @@ public class admin_login extends AppCompatActivity {
                 constant.URL_ADMIN_LOGIN, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                startActivity(new Intent(admin_login.this,admin_dashboard.class));
                 progressDialog.dismiss();
                 try {
                     JSONObject object = new JSONObject(response);
                     if(!object.getBoolean("error")){
+                        Intent intent = new Intent(admin_login.this,admin_dashboard.class);
+                        startActivity(intent);
                         Toast.makeText(admin_login.this, "User Login successful", Toast.LENGTH_SHORT).show();
-
-
                     }else{
-                        Toast.makeText(admin_login.this,object.getString("message")+" ",Toast.LENGTH_LONG).show();
+                        Toast.makeText(admin_login.this,object.getString("message"),Toast.LENGTH_LONG).show();
                     }
 
                 } catch (JSONException e) {
@@ -78,7 +76,7 @@ public class admin_login extends AppCompatActivity {
             @Override
             public void onErrorResponse(VolleyError error) {
                 progressDialog.hide();
-                Toast.makeText(admin_login.this, error.getMessage()+" ", Toast.LENGTH_SHORT).show();
+                Toast.makeText(admin_login.this, error.getMessage(), Toast.LENGTH_SHORT).show();
             }
         }){
             @Nullable

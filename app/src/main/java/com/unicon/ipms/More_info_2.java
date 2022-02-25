@@ -18,7 +18,7 @@ public class More_info_2 extends AppCompatActivity {
         ET_pass10 = (EditText) findViewById(R.id.ssc_year);
         ET_per10 = (EditText) findViewById(R.id.ssc_percent);
         ET_pass12 = (EditText) findViewById(R.id.hsc_year);
-        ET_per12 = (EditText) findViewById(R.id.hsc_percent);
+        ET_per12 = (EditText) findViewById(R.id.hse_percent);
         ET_passDip = (EditText) findViewById(R.id.diploma_year);
         ET_perDip = (EditText) findViewById(R.id.diploma_percent);
         B_next = (Button) findViewById(R.id.button_next);
@@ -44,7 +44,7 @@ public class More_info_2 extends AppCompatActivity {
         pass10 = ET_pass10.getText().toString().trim();
         per10 = ET_per10.getText().toString().trim();
         pass12 = ET_pass12.getText().toString().trim();
-        per12 = ET_per10.getText().toString().trim();
+        per12 = ET_per12.getText().toString().trim();
         passDip = ET_passDip.getText().toString().trim();
         perDip = ET_perDip.getText().toString().trim();
 

@@ -87,6 +87,8 @@ public class Sign_in extends AppCompatActivity {
                                        jsonObject.getString("email_id")
                                );
                                 Toast.makeText(Sign_in.this, "User Login successfully", Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(Sign_in.this,test_data.class);
+                                startActivity(intent);
                             }else{
                                 Toast.makeText(Sign_in.this, jsonObject.getString("message"), Toast.LENGTH_LONG).show();
                             }

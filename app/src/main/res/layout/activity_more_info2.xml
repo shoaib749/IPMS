@@ -7,20 +7,21 @@
     tools:context=".More_info_2"
     android:background="@color/background">
 
+
     <TextView
         android:id="@+id/ssc_year_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="60dp"
         android:text="@string/ssc_completion_year"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <EditText
         android:id="@+id/ssc_year"
@@ -36,14 +37,14 @@
         android:paddingEnd="10dp"
         android:paddingBottom="10dp"
         android:textColor="@color/black"
-        android:textSize="12sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ssc_year_text" />
 
     <EditText
-        android:id="@+id/hsc_percent"
+        android:id="@+id/diploma_year"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="30dp"
@@ -56,7 +57,7 @@
         android:paddingEnd="10dp"
         android:paddingBottom="10dp"
         android:textColor="@color/black"
-        android:textSize="12sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/ssc_year"
         app:layout_constraintStart_toStartOf="@+id/ssc_year"
         app:layout_constraintTop_toBottomOf="@+id/Diploma_year_text" />
@@ -65,13 +66,14 @@
         android:id="@+id/hsc_year_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="7dp"
         android:text="@string/hsc_completion_year"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ssc_percent" />
 
@@ -89,7 +91,7 @@
         android:paddingEnd="10dp"
         android:paddingBottom="10dp"
         android:textColor="@color/black"
-        android:textSize="12sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/ssc_percent"
         app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="@+id/ssc_percent"
@@ -99,13 +101,14 @@
         android:id="@+id/hsc_percent_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="7dp"
         android:text="@string/hsc_percentage"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hsc_year" />
 
@@ -113,18 +116,19 @@
         android:id="@+id/ssc_percent_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="7dp"
         android:text="@string/ssc_percentage"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ssc_year" />
 
     <EditText
-        android:id="@+id/diploma_year"
+        android:id="@+id/hse_percent"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="30dp"
@@ -137,7 +141,7 @@
         android:paddingEnd="10dp"
         android:paddingBottom="10dp"
         android:textColor="@color/black"
-        android:textSize="12sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/ssc_year"
         app:layout_constraintStart_toStartOf="@+id/ssc_year"
         app:layout_constraintTop_toBottomOf="@+id/hsc_percent_text" />
@@ -147,29 +151,31 @@
         android:id="@+id/Diploma_year_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="7dp"
         android:text="@string/diploma_completion_year"
         android:textColor="@color/black"
-        android:layout_marginTop="10dp"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/diploma_year" />
+        app:layout_constraintTop_toBottomOf="@+id/hse_percent" />
 
     <TextView
         android:id="@+id/Diploma_percentage_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="7dp"
         android:text="@string/diploma_percentage"
         android:textColor="@color/black"
         android:textSize="16sp"
-        android:layout_marginTop="10dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hsc_percent" />
+        app:layout_constraintTop_toBottomOf="@+id/diploma_year" />
 
     <EditText
         android:id="@+id/diploma_percent"
@@ -185,7 +191,7 @@
         android:paddingEnd="10dp"
         android:paddingBottom="10dp"
         android:textColor="@color/black"
-        android:textSize="12sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/ssc_year"
         app:layout_constraintHorizontal_bias="0.266"
         app:layout_constraintStart_toStartOf="@+id/ssc_year"
@@ -205,39 +211,40 @@
         android:paddingEnd="10dp"
         android:paddingBottom="10dp"
         android:textColor="@color/black"
-        android:textSize="12sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/ssc_year"
         app:layout_constraintStart_toStartOf="@+id/ssc_year"
         app:layout_constraintTop_toBottomOf="@+id/ssc_percent_text" />
 
     <Button
         android:id="@+id/button_previous"
-        android:layout_width="110dp"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/curve_button"
         android:text="Previous"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/diploma_percent"
-        app:layout_constraintVertical_bias="0.975" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/button_next"
-        android:layout_width="110dp"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="156dp"
         android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/curve_button"
         android:text="@string/next"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.984"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/button_previous"
         app:layout_constraintTop_toBottomOf="@+id/diploma_percent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
