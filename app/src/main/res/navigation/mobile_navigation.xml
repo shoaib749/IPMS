@@ -18,6 +18,11 @@
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
+        android:id="@+id/nav_placements"
+        android:name="com.unicon.ipms.ui.placements.Placements_Fragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+    <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.unicon.ipms.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"

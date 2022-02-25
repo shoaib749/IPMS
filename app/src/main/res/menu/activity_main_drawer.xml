@@ -5,19 +5,19 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_placements"
+            android:id="@+id/nav_home"
             android:icon="@drawable/ic_folder"
             android:title="@string/placements" />
         <item
-            android:id="@+id/nav_internships"
+            android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_folder"
             android:title="@string/internships" />
         <item
-            android:id="@+id/nav_add_placements"
+            android:id="@+id/nav_placements"
             android:icon="@drawable/ic_folder"
             android:title="@string/add_placement_details" />
         <item
-            android:id="@+id/nav_check_students_profile"
+            android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_folder"
             android:title="@string/check_students_profile" />
     </group>
