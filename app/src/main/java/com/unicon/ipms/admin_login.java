@@ -4,6 +4,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -59,6 +60,8 @@ public class admin_login extends AppCompatActivity {
                 try {
                     JSONObject object = new JSONObject(response);
                     if(!object.getBoolean("error")){
+                        Intent intent = new Intent(admin_login.this,admin_dashboard.class);
+                        startActivity(intent);
                         Toast.makeText(admin_login.this, "User Login successful", Toast.LENGTH_SHORT).show();
                     }else{
                         Toast.makeText(admin_login.this,object.getString("message"),Toast.LENGTH_LONG).show();

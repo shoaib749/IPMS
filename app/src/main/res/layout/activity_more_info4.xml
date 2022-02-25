@@ -33,18 +33,21 @@
         app:layout_constraintTop_toBottomOf="@+id/select_option_text">
 
         <RadioButton
+            android:id="@+id/RB_placement"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/placement_facility_by_college"
             android:textColor="@color/colorPrimary" />
 
         <RadioButton
+            android:id="@+id/RB_higher_studies"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/higher_studies"
             android:textColor="@color/colorPrimary" />
 
         <RadioButton
+            android:id="@+id/RB_entrepreneurship"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/entrepreneurship"
@@ -77,12 +80,14 @@
         app:layout_constraintTop_toBottomOf="@+id/placement_status_text">
 
         <RadioButton
+            android:id="@+id/placed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/placed"
             android:textColor="@color/colorPrimary" />
 
         <RadioButton
+            android:id="@+id/unplaced"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/unplaced"

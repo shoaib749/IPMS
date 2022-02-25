@@ -33,7 +33,7 @@
         android:autofillHints="Name"
         app:layout_constraintHeight_percent="0.06"
         android:background="@drawable/name"
-        android:inputType="number"
+        android:inputType="date"
         android:paddingStart="20dp"
         android:paddingTop="10dp"
         android:paddingEnd="10dp"

@@ -84,6 +84,7 @@ public class Create_Info extends AppCompatActivity {
                     JSONObject jsonObject = new JSONObject(response);
                     if(jsonObject.getBoolean("error") == false)
                     {
+                        sharedPrefManager.getInstance(getApplicationContext()).userLogin(fname,lname,email);
                         Intent intent = new Intent(Create_Info.this, More_Info.class);
                         startActivity(intent);
                         Toast.makeText(Create_Info.this, jsonObject.getString("message"), Toast.LENGTH_SHORT).show();
