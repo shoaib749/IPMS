@@ -9,29 +9,29 @@
         android:id="@+id/nav_home"
         android:name="com.unicon.ipms.admin_ui.home.HomeFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/admin_fragment_home" />
     <fragment
         android:id="@+id/nav_placements"
         android:name="com.unicon.ipms.admin_ui.placements.Placements_Fragment"
         android:label="@string/placements"
-        tools:layout="@layout/fragment_placements" />
+        tools:layout="@layout/admin_fragment_placements" />
 
     <fragment
         android:id="@+id/nav_internships"
         android:name="com.unicon.ipms.admin_ui.internships.Internships_Fragment"
         android:label="@string/internships"
-        tools:layout="@layout/fragment_internships" />
+        tools:layout="@layout/admin_fragment_internships" />
 
     <fragment
         android:id="@+id/nav_add_placement_details"
         android:name="com.unicon.ipms.admin_ui.add_placement_details.add_placement_details"
         android:label="@string/add_placement_details"
-        tools:layout="@layout/fragment_add_placement_details" />
+        tools:layout="@layout/admin_fragment_add_placement_details" />
 
     <fragment
         android:id="@+id/nav_check_student_profile"
         android:name="com.unicon.ipms.admin_ui.check_student_profile.check_student_profile"
         android:label="@string/check_students_profile"
-        tools:layout="@layout/fragment_check_student_profile" />
+        tools:layout="@layout/admin_fragment_check_student_profile" />
 
 </navigation>

@@ -12,12 +12,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.unicon.ipms.databinding.FragmentPlacementsBinding;
+import com.unicon.ipms.databinding.AdminFragmentPlacementsBinding;
+
 
 public class Placements_Fragment extends Fragment {
 
     private PlacementsViewModel mViewModel;
-    private FragmentPlacementsBinding binding;
+    private AdminFragmentPlacementsBinding binding;
 
     public static Placements_Fragment newInstance() {
         return new Placements_Fragment();
@@ -28,7 +29,7 @@ public class Placements_Fragment extends Fragment {
         mViewModel =
                 new ViewModelProvider(this).get(PlacementsViewModel.class);
 
-        binding = FragmentPlacementsBinding.inflate(inflater, container, false);
+        binding = AdminFragmentPlacementsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textPlacements;

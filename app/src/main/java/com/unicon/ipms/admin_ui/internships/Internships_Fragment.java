@@ -12,12 +12,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.unicon.ipms.databinding.FragmentInternshipsBinding;
+import com.unicon.ipms.databinding.AdminFragmentInternshipsBinding;
 
 public class Internships_Fragment extends Fragment {
 
     private InternshipsViewModel mViewModel;
-    private FragmentInternshipsBinding binding;
+    private AdminFragmentInternshipsBinding binding;
 
     public static Internships_Fragment newInstance() {
         return new Internships_Fragment();
@@ -28,7 +28,7 @@ public class Internships_Fragment extends Fragment {
         mViewModel =
                 new ViewModelProvider(this).get(InternshipsViewModel.class);
 
-        binding = FragmentInternshipsBinding.inflate(inflater, container, false);
+        binding = AdminFragmentInternshipsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textInternships;

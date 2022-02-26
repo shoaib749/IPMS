@@ -12,17 +12,18 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.unicon.ipms.databinding.FragmentCheckStudentProfileBinding;
+import com.unicon.ipms.databinding.AdminFragmentCheckStudentProfileBinding;
+
 
 public class check_student_profile extends Fragment {
-    private FragmentCheckStudentProfileBinding binding;
+    private AdminFragmentCheckStudentProfileBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         CheckStudentProfileViewModel checkStudentProfileViewModel =
                 new ViewModelProvider(this).get(CheckStudentProfileViewModel.class);
 
-        binding =FragmentCheckStudentProfileBinding.inflate(inflater, container, false);
+        binding =AdminFragmentCheckStudentProfileBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textCheckStudentProfile;

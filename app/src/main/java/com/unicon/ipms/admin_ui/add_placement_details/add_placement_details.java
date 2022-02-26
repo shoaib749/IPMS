@@ -12,18 +12,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.unicon.ipms.databinding.FragmentAddPlacementDetailsBinding;
+import com.unicon.ipms.databinding.AdminFragmentAddPlacementDetailsBinding;
+
 
 public class add_placement_details extends Fragment {
 
-    private FragmentAddPlacementDetailsBinding binding;
+    private AdminFragmentAddPlacementDetailsBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         AddPlacementDetailsViewModel addPlacementDetailsViewModel =
                 new ViewModelProvider(this).get(AddPlacementDetailsViewModel.class);
 
-        binding =FragmentAddPlacementDetailsBinding.inflate(inflater, container, false);
+        binding =AdminFragmentAddPlacementDetailsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textAddPlacementDetails;
