@@ -236,7 +236,8 @@
         <TextView
             android:id="@+id/have_account"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
             android:layout_marginTop="20dp"
             android:text="@string/already_have_an_account_login"
             android:textColor="#000000"
