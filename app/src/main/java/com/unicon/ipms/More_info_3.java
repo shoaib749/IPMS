@@ -57,7 +57,6 @@ public class More_info_3 extends AppCompatActivity {
                 getData();
                 Intent intent =new Intent(More_info_3.this,More_info_4.class);
                 startActivity(intent);
-
             }
         });
         B_previous.setOnClickListener(new View.OnClickListener() {

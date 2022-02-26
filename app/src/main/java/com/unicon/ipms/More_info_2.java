@@ -42,7 +42,6 @@ public class More_info_2 extends AppCompatActivity {
                 getInfo();
                 Intent intent = new Intent(More_info_2.this,More_info_3.class);
                 startActivity(intent);
-                onNavigateUp();
             }
         });
         B_previous.setOnClickListener(new View.OnClickListener() {
