@@ -3,14 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    >
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".75"
+        android:scaleType="centerCrop"
+        android:src="@drawable/splash_background" />
+
+    <View
+        android:id="@+id/ellipse_11"
+        android:layout_width="215dp"
+        android:layout_centerInParent="true"
+        android:layout_height="215dp"
+        android:background="@drawable/ellipse" />
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_centerInParent="true"
-        android:contentDescription="@string/todo"
+        android:contentDescription="@string/logo"
         app:srcCompat="@drawable/logo" />
 </RelativeLayout>

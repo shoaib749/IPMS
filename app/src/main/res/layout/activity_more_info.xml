@@ -267,7 +267,7 @@
         android:layout_height="0dp"
         android:autofillHints=""
         android:background="@drawable/name"
-        android:inputType="text"
+        android:inputType="number"
         android:paddingStart="20dp"
         android:paddingTop="10dp"
         android:paddingEnd="10dp"

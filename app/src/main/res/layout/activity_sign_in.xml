@@ -175,8 +175,9 @@
         <TextView
             android:id="@+id/sign"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
             android:text="@string/don_t_have_an_account_Sign_up_here"
             app:layout_constraintEnd_toEndOf="@+id/forget_password"
             app:layout_constraintStart_toStartOf="@+id/forget_password"
