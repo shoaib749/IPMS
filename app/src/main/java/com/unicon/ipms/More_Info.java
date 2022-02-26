@@ -32,7 +32,6 @@ public class More_Info extends AppCompatActivity {
         B_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 getData();
                 Intent intent = new Intent(More_Info.this,More_info_2.class);
                 startActivity(intent);
@@ -57,4 +56,5 @@ public class More_Info extends AppCompatActivity {
                 .moreInfo_1(fname,lname,email,studentNo,parentNo,dept,registration,sem);
 
     }
+
 }

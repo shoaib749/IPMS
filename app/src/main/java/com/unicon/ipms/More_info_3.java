@@ -31,19 +31,41 @@ public class More_info_3 extends AppCompatActivity {
         ET_dead = (EditText) findViewById(R.id.dead_backlog);
         B_next=findViewById(R.id.button_next);
         B_previous=findViewById(R.id.button_previous);
+
+        try {
+            ET_admission.setText(sharepref_moreInfo.getInstance(this).getadmission());
+            ET_sgpa1.setText(sharepref_moreInfo.getInstance(this).getsgpa1());
+            ET_sgpa2.setText(sharepref_moreInfo.getInstance(this).getsgpa2());
+            ET_sgpa3.setText(sharepref_moreInfo.getInstance(this).getsgpa3());
+            ET_sgpa4.setText(sharepref_moreInfo.getInstance(this).getsgpa4());
+            ET_sgpa5.setText(sharepref_moreInfo.getInstance(this).getsgpa5());
+            ET_sgpa6.setText(sharepref_moreInfo.getInstance(this).getsgpa6());
+            ET_sgpa7.setText(sharepref_moreInfo.getInstance(this).getsgpa7());
+            ET_sgpa8.setText(sharepref_moreInfo.getInstance(this).getsgpa8());
+            ET_avgSgpa.setText(sharepref_moreInfo.getInstance(this).getavgSgpa());
+            ET_passout.setText(sharepref_moreInfo.getInstance(this).getpassout());
+            ET_live.setText(sharepref_moreInfo.getInstance(this).getlive());
+            ET_dead.setText(sharepref_moreInfo.getInstance(this).getdead());
+        }catch (Exception e){
+            //do nothing
+        }
+
+
         B_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 getData();
                 Intent intent =new Intent(More_info_3.this,More_info_4.class);
                 startActivity(intent);
+
             }
         });
         B_previous.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent =new Intent(More_info_3.this,More_info_2.class);
-                startActivity(intent);
+                getData();
+                onNavigateUp();
+                finish();
             }
         });
 
@@ -69,4 +91,5 @@ public class More_info_3 extends AppCompatActivity {
         sharepref_moreInfo.getInstance(getApplicationContext())
                 .moreInfo3(admission,sgpa1,sgpa2,sgpa3,sgpa4,sgpa5,sgpa6,sgpa7,sgpa8,avgSgpa,passout,live,dead);
     }
+
 }

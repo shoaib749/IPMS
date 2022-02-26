@@ -14,11 +14,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        if(sharedPrefManager.getInstance(this).islogedIn()){
-            finish();
-            startActivity(new Intent(MainActivity.this,test_data.class));
-            return;
-        }
+//        if(sharedPrefManager.getInstance(this).islogedIn()){
+//            finish();
+//            startActivity(new Intent(MainActivity.this,test_data.class));
+//            return;
+//        }
         Student=findViewById(R.id.Student);
         Admin=findViewById(R.id.Admin);
         getSupportActionBar().hide();

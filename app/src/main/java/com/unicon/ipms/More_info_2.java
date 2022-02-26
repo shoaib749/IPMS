@@ -23,19 +23,34 @@ public class More_info_2 extends AppCompatActivity {
         ET_perDip = (EditText) findViewById(R.id.diploma_percent);
         B_next = (Button) findViewById(R.id.button_next);
         B_previous = (Button) findViewById(R.id.button_previous);
+
+        try {
+            ET_pass10.setText(sharepref_moreInfo.getInstance(this).getpass10());
+            ET_pass12.setText(sharepref_moreInfo.getInstance(this).getpass12());
+            ET_per10.setText(sharepref_moreInfo.getInstance(this).getper10());
+            ET_per12.setText(sharepref_moreInfo.getInstance(this).getper12());
+            ET_passDip.setText(sharepref_moreInfo.getInstance(this).getpassDip());
+            ET_perDip.setText(sharepref_moreInfo.getInstance(this).getperDip());
+        }catch (Exception e){
+            //Do nothing
+        }
+
+
         B_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 getInfo();
                 Intent intent = new Intent(More_info_2.this,More_info_3.class);
                 startActivity(intent);
+                onNavigateUp();
             }
         });
         B_previous.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(More_info_2.this,More_Info.class);
-                startActivity(intent);
+                getInfo();
+                onNavigateUp();
+                finish();
             }
         });
     }
@@ -47,8 +62,8 @@ public class More_info_2 extends AppCompatActivity {
         per12 = ET_per12.getText().toString().trim();
         passDip = ET_passDip.getText().toString().trim();
         perDip = ET_perDip.getText().toString().trim();
-
         sharepref_moreInfo.getInstance(this)
                 .moreInfo2(pass10,per10,pass12,per12,passDip,perDip);
     }
+
 }

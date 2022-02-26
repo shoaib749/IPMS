@@ -52,8 +52,8 @@ public class More_info_4 extends AppCompatActivity {
         B_prev.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(More_info_4.this,More_info_3.class);
-                startActivity(intent);
+                onNavigateUp();
+                finish();
             }
         });
     }
