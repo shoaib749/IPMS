@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.internships.Internships_Fragment">
+    tools:context=".admin_ui.internships.Internships_Fragment">
 
     <TextView
         android:id="@+id/text_internships"

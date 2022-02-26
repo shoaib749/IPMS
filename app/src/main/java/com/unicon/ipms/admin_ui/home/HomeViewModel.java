@@ -1,15 +1,16 @@
-package com.unicon.ipms.ui.internships;
+package com.unicon.ipms.admin_ui.home;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class InternshipsViewModel extends ViewModel {
-    private MutableLiveData<String> mText;
+public class HomeViewModel extends ViewModel {
 
-    public InternshipsViewModel() {
+    private final MutableLiveData<String> mText;
+
+    public HomeViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is Internships fragment");
+        mText.setValue("This is home fragment");
     }
 
     public LiveData<String> getText() {

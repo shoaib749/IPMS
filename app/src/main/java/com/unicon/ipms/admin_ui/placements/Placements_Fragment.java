@@ -1,11 +1,10 @@
-package com.unicon.ipms.ui.placements;
+package com.unicon.ipms.admin_ui.placements;
 
 import androidx.lifecycle.ViewModelProvider;
 
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -13,8 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.unicon.ipms.R;
-import com.unicon.ipms.databinding.FragmentGalleryBinding;
 import com.unicon.ipms.databinding.FragmentPlacementsBinding;
 
 public class Placements_Fragment extends Fragment {

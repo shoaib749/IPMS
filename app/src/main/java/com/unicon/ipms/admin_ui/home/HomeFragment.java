@@ -1,4 +1,4 @@
-package com.unicon.ipms.ui.home;
+package com.unicon.ipms.admin_ui.home;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

@@ -1,11 +1,10 @@
-package com.unicon.ipms.ui.add_placement_details;
+package com.unicon.ipms.admin_ui.add_placement_details;
 
 import androidx.lifecycle.ViewModelProvider;
 
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -13,10 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.unicon.ipms.R;
 import com.unicon.ipms.databinding.FragmentAddPlacementDetailsBinding;
-import com.unicon.ipms.databinding.FragmentHomeBinding;
-import com.unicon.ipms.ui.home.HomeViewModel;
 
 public class add_placement_details extends Fragment {
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.check_student_profile.check_student_profile">
+    tools:context=".admin_ui.check_student_profile.check_student_profile">
 
     <TextView
         android:id="@+id/text_check_student_profile"
