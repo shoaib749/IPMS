@@ -1,4 +1,4 @@
-package com.unicon.ipms.Student_DashBoard_UI.Placement;
+package com.unicon.ipms.student_ui.home;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

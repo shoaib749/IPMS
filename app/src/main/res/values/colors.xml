@@ -13,4 +13,5 @@
     <color name="cust_blue">#4E73DF</color>
     <color name="admin_login">#36C56F</color>
     <color name="student_login">#4E73DF</color>
+    <color name="back_gray">#F2F2F2</color>
 </resources>

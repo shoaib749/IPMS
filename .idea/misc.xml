@@ -3,28 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-<<<<<<< HEAD
-        <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/activity_admin_dashboard.xml" value="0.17239583333333333" />
-        <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/activity_admin_login.xml" value="0.17239583333333333" />
-        <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/activity_create_info.xml" value="0.1" />
-        <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/activity_more_info.xml" value="0.1" />
-        <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/activity_more_info2.xml" value="0.22" />
-        <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/activity_more_info3.xml" value="0.17239583333333333" />
-        <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/activity_more_info4.xml" value="0.17239583333333333" />
-        <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/activity_sign_in.xml" value="0.1" />
-        <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/activity_splash_screen.xml" value="0.17239583333333333" />
-        <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/activity_student_dashboard.xml" value="0.17239583333333333" />
-        <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/activity_test_data.xml" value="0.17239583333333333" />
-        <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/admin_fragment_add_placement_details.xml" value="0.17239583333333333" />
-        <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/admin_fragment_check_student_profile.xml" value="0.17239583333333333" />
-        <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/admin_fragment_home.xml" value="0.17239583333333333" />
-        <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/admin_fragment_internships.xml" value="0.17239583333333333" />
-        <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/admin_fragment_placements.xml" value="0.17239583333333333" />
-        <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/app_bar_admin_dashboard.xml" value="0.17239583333333333" />
-        <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/app_bar_student_dashboard.xml" value="0.17239583333333333" />
-=======
->>>>>>> parent of ff06b02 (Student_dashboard added)
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS10/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.178" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS10/app/src/main/res/drawable/curve_2.xml" value="0.178" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS10/app/src/main/res/drawable/curve_button.xml" value="0.178" />
@@ -39,18 +17,54 @@
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS10/app/src/main/res/layout/activity_sign_in.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS10/app/src/main/res/layout/activity_splash_screen.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Unicon/StudioProjects/IPMS_2/app/src/main/res/layout/activity_create_info.xml" value="0.1" />
+        <entry key="..\:/Users/Unicon/StudioProjects/IPMS_3/app/src/main/res/layout/activity_admin_dashboard.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Unicon/StudioProjects/IPMS_3/app/src/main/res/layout/activity_admin_login.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Unicon/StudioProjects/IPMS_3/app/src/main/res/layout/activity_more_info.xml" value="0.33" />
         <entry key="..\:/Users/Unicon/StudioProjects/IPMS_3/app/src/main/res/layout/activity_more_info2.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Unicon/StudioProjects/IPMS_3/app/src/main/res/layout/activity_more_info3.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Unicon/StudioProjects/IPMS_3/app/src/main/res/layout/activity_more_info3.xml" value="0.1" />
+        <entry key="..\:/Users/Unicon/StudioProjects/IPMS_3/app/src/main/res/layout/activity_more_info4.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Unicon/StudioProjects/IPMS_3/app/src/main/res/layout/activity_sign_in.xml" value="0.1" />
+        <entry key="..\:/Users/Unicon/StudioProjects/IPMS_3/app/src/main/res/layout/activity_test_data.xml" value="0.1" />
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/drawable/curve_2.xml" value="0.2115" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/drawable/curve_button.xml" value="0.2005" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/drawable/ellipse.xml" value="0.2005" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/drawable/rectangle.xml" value="0.1755" />
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/drawable/rectangle06.xml" value="0.2115" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/drawable/round_username.xml" value="0.2005" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/drawable/side_nav_bar.xml" value="0.1345" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_admin_dashboard.xml" value="0.1" />
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_admin_login.xml" value="0.1" />
-        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_more_info.xml" value="0.22" />
-        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_sign_in.xml" value="0.1802536231884058" />
-        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_splash_screen.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_create_info.xml" value="0.22" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_more_info.xml" value="0.1" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_sign_in.xml" value="0.22" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_student_dashboard.xml" value="0.25" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_test_data.xml" value="0.1" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/admin_fragment_add_placement_details.xml" value="0.17192982456140352" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/admin_fragment_check_student_profile.xml" value="0.17192982456140352" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/admin_fragment_home.xml" value="0.22" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/app_bar_student_dashboard.xml" value="0.17192982456140352" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/content_student_dashboard.xml" value="0.17192982456140352" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/content_student_daskboard.xml" value="0.14628623188405798" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/fragment_add_placement_details.xml" value="0.1" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/fragment_gallery.xml" value="0.15806159420289856" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/fragment_internships.xml" value="0.1" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/frgament_check_student_profile.xml" value="0.1" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/nav_header_student_dashboard.xml" value="0.17192982456140352" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/nav_header_student_daskboard.xml" value="0.17192982456140352" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/student_fragment_home.xml" value="0.17192982456140352" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/student_fragment_internship.xml" value="0.17192982456140352" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/student_fragment_internships.xml" value="0.17192982456140352" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/student_fragment_placement.xml" value="0.1" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/student_fragment_placement_status.xml" value="0.17192982456140352" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/menu/activity_main_drawer.xml" value="0.33" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/menu/activity_main_drawer2.xml" value="0.17192982456140352" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/menu/admin_dashboard.xml" value="0.20102564102564102" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/menu/admin_dashboard2.xml" value="0.1696969696969697" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/menu/student_dashboard.xml" value="0.17192982456140352" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/menu/student_daskboard.xml" value="0.17192982456140352" />
       </map>
     </option>
   </component>

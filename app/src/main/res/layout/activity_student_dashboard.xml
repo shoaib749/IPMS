@@ -16,12 +16,13 @@
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
+        android:background="@color/cust_blue"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:fitsSystemWindows="true"
         app:itemTextColor="@color/white"
-        android:background="@color/colorPrimary"
+        android:layout_gravity="start"
+        app:itemIconTint="@color/white"
+        android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_student_dashboard"
-        app:menu="@menu/activity_main_drawer" />
+        app:menu="@menu/activity_main_drawer2" />
 </androidx.drawerlayout.widget.DrawerLayout>

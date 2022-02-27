@@ -6,6 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <View
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-110dp"
+        android:layout_marginTop="-30dp"
+        android:alpha=".6"
+        android:background="@drawable/ellipse"
+        android:backgroundTint="@color/cust_blue"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-99dp"
+        tools:layout_editor_absoluteY="-48dp" />
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="-30dp"
+        android:layout_marginTop="-110dp"
+        android:alpha=".7"
+        android:background="@drawable/ellipse"
+        android:backgroundTint="@color/cust_blue"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-105dp" />
+
     <Button
         android:id="@+id/Admin"
         android:layout_width="match_parent"
@@ -38,16 +64,16 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="320dp"
+        android:layout_height="420dp"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
+        android:contentDescription="@string/todo"
         app:layout_constraintBottom_toTopOf="@+id/Student"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic__2nd_screen_logo"
-        android:contentDescription="@string/todo" />
+        app:srcCompat="@drawable/ic__2nd_screen_logo" />
 </androidx.constraintlayout.widget.ConstraintLayout>

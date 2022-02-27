@@ -71,6 +71,7 @@
     <string name="check_students_profile">Check Students Profile</string>
     <string name="notification">Notification</string>
     <string name="logo">logo</string>
-    <string name="visiting_companies">Visiting Companies</string>
-    <string name="company_name">COMPANY NAME</string>
+    <string name="total_students_placed">Total Students Placed</string>
+    <string name="total_placement_offers">total placement offers</string>
+    <string name="title_activity_student_daskboard">student_daskboard</string>
 </resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.unicon.ipms.student_ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/student_fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_internship"
+        android:name="com.unicon.ipms.student_ui.internships.Internships_Fragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/student_fragment_internships" />
+
+    <fragment
+        android:id="@+id/nav_placement"
+        android:name="com.unicon.ipms.student_ui.placements.Placements_Fragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/student_fragment_placement" />
+
+    <fragment
+        android:id="@+id/nav_placement_status"
+        android:name="com.unicon.ipms.student_ui.placement_status.Placement_Status_Fragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/student_fragment_placement_status" />
+</navigation>

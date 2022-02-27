@@ -1,4 +1,4 @@
-package com.unicon.ipms.Student_DashBoard_UI.Placement_status;
+package com.unicon.ipms.student_ui.home;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,22 +10,22 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.unicon.ipms.databinding.StudentFragmentPlacementBinding;
+import com.unicon.ipms.databinding.StudentFragmentHomeBinding;
 
-public class SlideshowFragment extends Fragment {
+public class HomeFragment extends Fragment {
 
-    private StudentFragmentPlacementBinding binding;
+    private StudentFragmentHomeBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        SlideshowViewModel slideshowViewModel =
-                new ViewModelProvider(this).get(SlideshowViewModel.class);
+        HomeViewModel homeViewModel =
+                new ViewModelProvider(this).get(HomeViewModel.class);
 
-        binding = StudentFragmentPlacementBinding.inflate(inflater, container, false);
+        binding = StudentFragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.VistingCompaniesTV;
-        slideshowViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView textView = binding.textHome;
+        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
