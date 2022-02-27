@@ -30,6 +30,7 @@ public class Sign_in extends AppCompatActivity {
     private TextView sign;
     private EditText ET_password,ET_email;
     private ProgressDialog progressDialog;
+    private Functions f;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +40,7 @@ public class Sign_in extends AppCompatActivity {
         login = (Button) findViewById(R.id.sign_in);
         ET_email = (EditText) findViewById(R.id.login_username);
         ET_password = (EditText) findViewById(R.id.login_password);
+        f=new Functions();
 
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Please wait....");
@@ -48,7 +50,11 @@ public class Sign_in extends AppCompatActivity {
             login.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    if(validations());
+                    else{
                         userLogin();
+                    }
+
                 }
             });
         }catch (Exception e){
@@ -59,6 +65,7 @@ public class Sign_in extends AppCompatActivity {
         sign.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Intent intent =new Intent(Sign_in.this,Create_Info.class);
                 startActivity(intent);
             }
@@ -114,5 +121,16 @@ public class Sign_in extends AppCompatActivity {
         };
         requestHandler.getInstance(this).addToRequestQueue(stringRequest);
     }
+    private boolean validations(){
+        if(f.cannotBeBlank(ET_email.getText().toString())) {
+            Toast.makeText(Sign_in.this, "Username cannot be empty", Toast.LENGTH_LONG).show();
+            return true;
+        }
+        if(f.cannotBeBlank(ET_password.getText().toString())) {
+            Toast.makeText(Sign_in.this, "Password cannot be empty", Toast.LENGTH_LONG).show();
+            return true;
+        }
+            return false;
+        }
+    }
 
-}

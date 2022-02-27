@@ -43,7 +43,7 @@
         app:layout_constraintTop_toBottomOf="@+id/ssc_year_text" />
 
     <EditText
-        android:id="@+id/hsc_percent"
+        android:id="@+id/dip_year"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="30dp"
@@ -96,11 +96,11 @@
         app:layout_constraintTop_toBottomOf="@+id/hsc_year_text" />
 
     <TextView
-        android:id="@+id/hsc_percent_text"
+        android:id="@+id/dip_year_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="@string/hsc_percentage"
+        android:text="HSC Percentage"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -124,7 +124,7 @@
         app:layout_constraintTop_toBottomOf="@+id/ssc_year" />
 
     <EditText
-        android:id="@+id/diploma_year"
+        android:id="@+id/hsc_percent"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="30dp"
@@ -140,7 +140,7 @@
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@+id/ssc_year"
         app:layout_constraintStart_toStartOf="@+id/ssc_year"
-        app:layout_constraintTop_toBottomOf="@+id/hsc_percent_text" />
+        app:layout_constraintTop_toBottomOf="@+id/dip_year_text" />
 
 
     <TextView
@@ -155,7 +155,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.142"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/diploma_year" />
+        app:layout_constraintTop_toBottomOf="@+id/hsc_percent" />
 
     <TextView
         android:id="@+id/Diploma_percentage_text"
@@ -169,7 +169,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.139"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hsc_percent" />
+        app:layout_constraintTop_toBottomOf="@+id/dip_year" />
 
     <EditText
         android:id="@+id/diploma_percent"
