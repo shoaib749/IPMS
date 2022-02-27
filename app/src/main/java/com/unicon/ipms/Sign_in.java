@@ -88,8 +88,7 @@ public class Sign_in extends AppCompatActivity {
                                );
                                 Toast.makeText(Sign_in.this, "User Login successfully", Toast.LENGTH_SHORT).show();
                                 startActivity(new Intent(getApplicationContext(),student_dashboard.class));
-                                Intent intent = new Intent(Sign_in.this,test_data.class);
-                                startActivity(intent);
+//                                Intent intent = new Intent(Sign_in.this,test_data.class);
                             }else{
                                 Toast.makeText(Sign_in.this, jsonObject.getString("message"), Toast.LENGTH_LONG).show();
                             }
