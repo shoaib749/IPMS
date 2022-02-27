@@ -45,15 +45,21 @@ public class More_info_4 extends AppCompatActivity {
         B_submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getData();
-                sendData();
+                if(validations());
+                else{
+                    Intent intent = new Intent(More_info_4.this, admin_login.class);
+                    startActivity(intent);
+                    getData();
+                    sendData();
+                }
+
             }
         });
         B_prev.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(More_info_4.this,More_info_3.class);
-                startActivity(intent);
+                onNavigateUp();
+                finish();
             }
         });
     }
@@ -142,5 +148,24 @@ public class More_info_4 extends AppCompatActivity {
             }
         };
         requestHandler.getInstance(this).addToRequestQueue(stringRequest);
+
+    }
+    private boolean validations(){
+        if (radioGroup1.getCheckedRadioButtonId() != -1);
+        else
+        {
+            Toast.makeText(More_info_4.this, "Please select an option", Toast.LENGTH_LONG).show();
+            return true;
+        }
+        if (radioGroup2.getCheckedRadioButtonId() != -1);
+        else
+        {
+            Toast.makeText(More_info_4.this, "Please select placement status", Toast.LENGTH_LONG).show();
+            return true;
+        }
+        return false;
+
+
+
     }
 }

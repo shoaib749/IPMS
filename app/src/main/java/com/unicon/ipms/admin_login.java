@@ -28,6 +28,7 @@ public class admin_login extends AppCompatActivity {
     private EditText ET_email_id,ET_pass;
     private Button B_login;
     private ProgressDialog progressDialog;
+    private Functions f;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,15 +38,20 @@ public class admin_login extends AppCompatActivity {
         ET_email_id = (EditText) findViewById(R.id.login_username);
         ET_pass = (EditText) findViewById(R.id.login_password);
         B_login = (Button) findViewById(R.id.sign_in);
+        f=new Functions();
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Please wait....");
         B_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getData();
+                    if(validations());
+                    else{
+                        getData();
+                    }
+
+                }
+            });
             }
-        });
-    }
     public void getData(){
         String email_id,pass;
         email_id = ET_email_id.getText().toString().trim();
@@ -90,4 +96,16 @@ public class admin_login extends AppCompatActivity {
         };
         requestHandler.getInstance(this).addToRequestQueue(stringRequest);
     }
+    private boolean validations(){
+        if(f.cannotBeBlank(ET_email_id.getText().toString())) {
+            Toast.makeText(admin_login.this, "Username cannot be empty", Toast.LENGTH_LONG).show();
+            return true;
+        }
+        if(f.cannotBeBlank(ET_pass.getText().toString())) {
+            Toast.makeText(admin_login.this, "Password cannot be empty", Toast.LENGTH_LONG).show();
+            return true;
+        }
+        return false;
+    }
 }
+

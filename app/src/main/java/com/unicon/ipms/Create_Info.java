@@ -53,14 +53,12 @@ public class Create_Info extends AppCompatActivity {
                     else{
                     userRegister();
                 }
-
-
             }
         });
         TV_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Create_Info.this,Sign_in.class);
+                Intent intent = new Intent(Create_Info.this,More_Info.class);
                 startActivity(intent);
                 finish();
             }
@@ -162,7 +160,16 @@ public class Create_Info extends AppCompatActivity {
                 Toast.makeText(Create_Info.this, "Invalid Email", Toast.LENGTH_LONG).show();
                 return  true;
             }
+            /*Password*/
+            if(f.invalidPasswordChars(ET_pass.getText().toString())){
+                Toast.makeText(Create_Info.this, "Password should contain 8 to 16 characters", Toast.LENGTH_LONG).show();
+                return true;
+            }
+            /*Confirm Password*/
+            if (!f.invalidPassword(ET_pass.getText().toString(),ET_confirm_pass.getText().toString())){
+                Toast.makeText(Create_Info.this, "Password and Confirm Password should be same", Toast.LENGTH_LONG).show();
+                return true;
+            }
             return false;
-
         }
     }
