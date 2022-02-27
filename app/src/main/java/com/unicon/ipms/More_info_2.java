@@ -20,8 +20,8 @@ public class More_info_2 extends AppCompatActivity {
         ET_pass10 = (EditText) findViewById(R.id.ssc_year);
         ET_per10 = (EditText) findViewById(R.id.ssc_percent);
         ET_pass12 = (EditText) findViewById(R.id.hsc_year);
-        ET_per12 = (EditText) findViewById(R.id.hsc_percent);
-        ET_passDip = (EditText) findViewById(R.id.dip_year);
+        ET_per12 = (EditText) findViewById(R.id.hse_percent);
+        ET_passDip = (EditText) findViewById(R.id.diploma_year);
         ET_perDip = (EditText) findViewById(R.id.diploma_percent);
         B_next = (Button) findViewById(R.id.button_next);
         B_previous = (Button) findViewById(R.id.button_previous);

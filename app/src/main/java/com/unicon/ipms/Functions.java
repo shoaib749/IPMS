@@ -75,7 +75,11 @@ public class Functions {
         }
     }
     public boolean invalidCGPA(String s){
-        if (Float.parseFloat(s)>10.0 ||(Float.parseFloat(s)<1.0)){
+        if(s.equals(""))
+        {
+            return false;
+        }
+        else if (Float.parseFloat(s)>10.0 ||(Float.parseFloat(s)<1.0)){
             return true;
         }
         else{

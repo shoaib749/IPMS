@@ -13,17 +13,36 @@
         android:theme="@style/Theme.IPMS"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".student_dashboard"
+            android:exported="false"
+            android:label="@string/title_activity_student_dashboard"
+            android:theme="@style/Theme.IPMS.NoActionBar" />
+        <activity
+            android:name=".test_data"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".admin_dashboard"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+        <activity
             android:name=".admin_login"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".More_info_4"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".More_info_3"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".More_info_2"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".More_Info"
             android:exported="false"

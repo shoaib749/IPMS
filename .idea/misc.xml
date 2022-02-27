@@ -3,11 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/activity_admin_dashboard.xml" value="0.17239583333333333" />
         <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/activity_admin_login.xml" value="0.17239583333333333" />
         <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/activity_create_info.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/activity_more_info.xml" value="0.1" />
         <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/activity_more_info2.xml" value="0.22" />
         <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/activity_more_info3.xml" value="0.17239583333333333" />
         <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/activity_more_info4.xml" value="0.17239583333333333" />
+        <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/activity_sign_in.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/activity_splash_screen.xml" value="0.17239583333333333" />
+        <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/activity_student_dashboard.xml" value="0.17239583333333333" />
+        <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/activity_test_data.xml" value="0.17239583333333333" />
+        <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/admin_fragment_add_placement_details.xml" value="0.17239583333333333" />
+        <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/admin_fragment_check_student_profile.xml" value="0.17239583333333333" />
+        <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/admin_fragment_home.xml" value="0.17239583333333333" />
+        <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/admin_fragment_internships.xml" value="0.17239583333333333" />
+        <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/admin_fragment_placements.xml" value="0.17239583333333333" />
+        <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/app_bar_admin_dashboard.xml" value="0.17239583333333333" />
+        <entry key="..\:/Users/Admin/IPMS/app/src/main/res/layout/app_bar_student_dashboard.xml" value="0.17239583333333333" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS10/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.178" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS10/app/src/main/res/drawable/curve_2.xml" value="0.178" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS10/app/src/main/res/drawable/curve_button.xml" value="0.178" />
