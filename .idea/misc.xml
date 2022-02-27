@@ -3,6 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/drawable/ic_folder.xml" value="0.1" />
+        <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_student_dashboard.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/content_student_dashboard.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/fragment_gallery.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/fragment_internship.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/fragment_placement.xml" value="0.23796296296296296" />
+        <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/fragment_placement_status.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/nav_header_student_dashboard.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/student_fragment_placement.xml" value="0.19343065693430658" />
+        <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/menu/activity_main_drawer.xml" value="0.16054421768707483" />
+        <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/menu/student_dashboard.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS10/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.178" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS10/app/src/main/res/drawable/curve_2.xml" value="0.178" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS10/app/src/main/res/drawable/curve_button.xml" value="0.178" />
@@ -49,6 +60,17 @@
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/frgament_check_student_profile.xml" value="0.1" />
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/menu/activity_main_drawer.xml" value="0.33" />
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/menu/admin_dashboard.xml" value="0.20102564102564102" />
+        <entry key="..\:/Users/mayan/AndroidStudioProjects/Flutter/IPMS/app/src/main/res/drawable/ellipse.xml" value="0.2595" />
+        <entry key="..\:/Users/mayan/AndroidStudioProjects/Flutter/IPMS/app/src/main/res/drawable/ic__2nd_screen_logo.xml" value="0.2595" />
+        <entry key="..\:/Users/mayan/AndroidStudioProjects/Flutter/IPMS/app/src/main/res/drawable/ic_baseline_account_box_24.xml" value="0.2595" />
+        <entry key="..\:/Users/mayan/AndroidStudioProjects/Flutter/IPMS/app/src/main/res/drawable/rectangle.xml" value="0.2595" />
+        <entry key="..\:/Users/mayan/AndroidStudioProjects/Flutter/IPMS/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mayan/AndroidStudioProjects/Flutter/IPMS/app/src/main/res/layout/activity_student_dashboard.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mayan/AndroidStudioProjects/Flutter/IPMS/app/src/main/res/layout/admin_fragment_home.xml" value="0.33950290851401377" />
+        <entry key="..\:/Users/mayan/AndroidStudioProjects/Flutter/IPMS/app/src/main/res/menu/activity_main_drawer.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mayan/AndroidStudioProjects/Flutter/IPMS/app/src/main/res/menu/admin_dashboard.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mayan/AndroidStudioProjects/Flutter/IPMS/app/src/main/res/menu/admin_dashboard2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/mayan/AndroidStudioProjects/Flutter/IPMS/app/src/main/res/menu/student_dashboard.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

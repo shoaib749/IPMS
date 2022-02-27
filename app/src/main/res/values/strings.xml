@@ -71,4 +71,6 @@
     <string name="check_students_profile">Check Students Profile</string>
     <string name="notification">Notification</string>
     <string name="logo">logo</string>
+    <string name="total_students_placed">Total Students Placed</string>
+    <string name="total_placement_offers">total placement offers</string>
 </resources>
