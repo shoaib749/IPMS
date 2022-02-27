@@ -47,8 +47,6 @@ public class More_info_4 extends AppCompatActivity {
             public void onClick(View view) {
                 if(validations());
                 else{
-                    Intent intent = new Intent(More_info_4.this, admin_login.class);
-                    startActivity(intent);
                     getData();
                     sendData();
                 }
@@ -94,7 +92,6 @@ public class More_info_4 extends AppCompatActivity {
                             if(!obj.getBoolean("error")){
                                 Intent intent = new Intent(More_info_4.this,Sign_in.class);
                                 startActivity(intent);
-                                finish();
                             }
                             Toast.makeText(More_info_4.this,obj.getString("message") , Toast.LENGTH_SHORT).show();
                         } catch (JSONException e) {

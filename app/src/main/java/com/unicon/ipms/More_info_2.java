@@ -26,6 +26,18 @@ public class More_info_2 extends AppCompatActivity {
         B_next = (Button) findViewById(R.id.button_next);
         B_previous = (Button) findViewById(R.id.button_previous);
         f=new Functions();
+
+        try {
+            ET_pass10.setText(sharepref_moreInfo.getInstance(this).getpass10());
+            ET_per10.setText(sharepref_moreInfo.getInstance(this).getper10());
+            ET_pass12.setText(sharepref_moreInfo.getInstance(this).getpass12());
+            ET_per12.setText(sharepref_moreInfo.getInstance(this).getper12());
+            ET_passDip.setText(sharepref_moreInfo.getInstance(this).getpassDip());
+            ET_perDip.setText(sharepref_moreInfo.getInstance(this).getperDip());
+        }catch (Exception e){
+            //do nothing
+        }
+
         B_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -40,8 +52,9 @@ public class More_info_2 extends AppCompatActivity {
         B_previous.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(More_info_2.this,More_Info.class);
-                startActivity(intent);
+                getInfo();
+                onNavigateUp();
+                finish();
             }
         });
     }

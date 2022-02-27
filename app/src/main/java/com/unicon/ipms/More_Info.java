@@ -28,6 +28,14 @@ public class More_Info extends AppCompatActivity {
         ET_semester = (EditText) findViewById(R.id.Semester_ET);
         B_next = (Button) findViewById(R.id.button_next);
         f=new Functions();
+
+        try{
+            ET_fname.setText(sharedPrefManager.getInstance(this).getfname());
+            ET_lname.setText(sharedPrefManager.getInstance(this).getlname());
+            ET_email.setText(sharedPrefManager.getInstance(this).getEmail());
+        }catch (Exception e){
+            //do nothing
+        }
         B_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
