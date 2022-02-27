@@ -73,4 +73,5 @@
     <string name="logo">logo</string>
     <string name="total_students_placed">Total Students Placed</string>
     <string name="total_placement_offers">total placement offers</string>
+    <string name="title_activity_student_daskboard">student_daskboard</string>
 </resources>

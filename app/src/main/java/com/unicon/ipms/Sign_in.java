@@ -48,7 +48,7 @@ public class Sign_in extends AppCompatActivity {
             login.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                        userLogin();
+                    userLogin();
                 }
             });
         }catch (Exception e){
@@ -87,6 +87,7 @@ public class Sign_in extends AppCompatActivity {
                                        jsonObject.getString("email_id")
                                );
                                 Toast.makeText(Sign_in.this, "User Login successfully", Toast.LENGTH_SHORT).show();
+                                startActivity(new Intent(getApplicationContext(),student_dashboard.class));
                                 Intent intent = new Intent(Sign_in.this,test_data.class);
                                 startActivity(intent);
                             }else{
