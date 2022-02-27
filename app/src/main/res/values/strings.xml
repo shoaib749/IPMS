@@ -71,4 +71,6 @@
     <string name="check_students_profile">Check Students Profile</string>
     <string name="notification">Notification</string>
     <string name="logo">logo</string>
+    <string name="visiting_companies">Visiting Companies</string>
+    <string name="company_name">COMPANY NAME</string>
 </resources>
