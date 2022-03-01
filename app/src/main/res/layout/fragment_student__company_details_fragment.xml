@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".student_ui.visiting_student_Company_details">
+
+    <TextView
+        android:id="@+id/Company_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:text="@string/company_name"
+        android:textAlignment="center"
+        android:textColor="@color/gray"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Drive_date_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/drive_date"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Company_TV" />
+
+
+    <EditText
+        android:id="@+id/Drive_date_ET"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/student_company_details_box"
+        android:inputType="date"
+        android:padding="10dp"
+        android:paddingStart="20dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/Company_TV"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/Company_TV"
+        app:layout_constraintTop_toBottomOf="@+id/Drive_date_TV" />
+
+    <TextView
+        android:id="@+id/Eligibility_Criteria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Eligitbility Criteria"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/Drive_date_TV"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/Drive_date_TV"
+        app:layout_constraintTop_toBottomOf="@+id/Drive_date_ET" />
+
+    <EditText
+        android:id="@+id/Eligibility_Criteria_ET"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="0dp"
+        android:paddingStart="20dp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:inputType="text"
+        android:background="@drawable/student_company_details_box"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/Drive_date_ET"
+        app:layout_constraintHeight_percent="0.35"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Drive_date_ET"
+        app:layout_constraintTop_toBottomOf="@+id/Eligibility_Criteria" />
+
+    <TextView
+        android:id="@+id/Batch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Batch"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/Eligibility_Criteria"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="@+id/Eligibility_Criteria"
+        app:layout_constraintTop_toBottomOf="@+id/Eligibility_Criteria_ET" />
+
+    <EditText
+        android:id="@+id/Batch_ET"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/student_company_details_box"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:inputType="number"
+        android:paddingStart="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/Eligibility_Criteria_ET"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Eligibility_Criteria_ET"
+        app:layout_constraintTop_toBottomOf="@+id/Batch" />
+
+    <TextView
+        android:id="@+id/Salary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Salary"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/Batch"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/Batch"
+        app:layout_constraintTop_toBottomOf="@+id/Batch_ET" />
+
+    <EditText
+        android:id="@+id/Salary_ET"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="0dp"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:background="@drawable/student_company_details_box"
+        android:textColor="@color/black"
+        android:paddingStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Batch_ET"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintStart_toStartOf="@+id/Batch_ET"
+        app:layout_constraintTop_toBottomOf="@+id/Salary"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
