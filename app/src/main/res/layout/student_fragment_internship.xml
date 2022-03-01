@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Student_DashBoard_UI.Internship.GalleryFragment">
+    tools:context=".student_ui.internships.Internships_Fragment">
 
     <TextView
         android:id="@+id/text_gallery"

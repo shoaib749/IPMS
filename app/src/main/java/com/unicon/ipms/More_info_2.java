@@ -44,7 +44,7 @@ public class More_info_2 extends AppCompatActivity {
                 if(validations());
                 else {
                     getInfo();
-                    Intent intent = new Intent(More_info_2.this, More_info_3.class);
+                    Intent intent = new Intent(More_info_2.this, More_info_4.class);
                     startActivity(intent);
                 }
             }

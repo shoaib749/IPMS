@@ -61,7 +61,6 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
@@ -74,4 +73,22 @@
     <string name="total_students_placed">Total Students Placed</string>
     <string name="total_placement_offers">total placement offers</string>
     <string name="title_activity_student_daskboard">student_daskboard</string>
+    <string name="your_total_offers">YOUR TOTAL OFFERS</string>
+    <string name="_3_offers">3 Offers</string>
+    <string name="visiting_companies">Visiting Companies</string>
+    <string name="company_name">COMPANY NAME</string>
+    <string name="drive_date">Drive Date</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_internship">Add Internships</string>
+    <string name="add_internships">Add Internships</string>
+    <string name="mm_dd_yyyy">mm/dd/yyyy</string>
+    <string name="end_date">End date</string>
+    <string name="add_details">Add Details</string>
+    <string name="start_date">Start date</string>
+    <string name="mark_attendance">Mark Attendance</string>
+    <string name="weekly_attendance">Weekly Attendance</string>
+    <string name="student_feedback">Student Feedback</string>
+    <string name="student_biodate">Student Biodate</string>
+    <string name="my_internships">My Internships</string>
 </resources>
