@@ -58,7 +58,7 @@ public class Create_Info extends AppCompatActivity {
         TV_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Create_Info.this,More_Info.class);
+                Intent intent = new Intent(Create_Info.this,Sign_in.class);
                 startActivity(intent);
                 finish();
             }
@@ -102,7 +102,6 @@ public class Create_Info extends AppCompatActivity {
             public void onErrorResponse(VolleyError error) {
                 progressDialog.hide();
                 Toast.makeText(Create_Info.this, error.getMessage(), Toast.LENGTH_LONG).show();
-
             }
         }){
             @Nullable

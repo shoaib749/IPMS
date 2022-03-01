@@ -10,4 +10,6 @@ public class constant {
     public static final String URL_ADMIN_ADD_CURRENT_DRIVE = ROOT_URL+"adminAddDrive.php";
     public static final String URL_STUDENT_COUNT = ROOT_URL+"studentoffercount.php";
     public static final String URL_STUDENT_INDI_CURRENT_DRIVE = ROOT_URL+"getCurrentDrive.php";
+    public static final String URL_STUDENT_ALL_CURRENT_DRIVE = ROOT_URL+"allCurrentDrive.php";
+
 }

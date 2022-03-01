@@ -3,6 +3,7 @@ package com.unicon.ipms;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.TextView;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
@@ -25,10 +26,8 @@ public class student_dashboard extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         binding = ActivityStudentDashboardBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
         setSupportActionBar(binding.appBarStudentDashboard.toolbar);
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
@@ -41,6 +40,9 @@ public class student_dashboard extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_student_dashboard);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+        View headerView = navigationView.getHeaderView(0);
+        TextView textView=headerView.findViewById(R.id.Student_name_TV);
+        textView.setText(sharedPrefManager.getInstance(this).getfname() + " " + sharedPrefManager.getInstance(this).getlname());
     }
 
     @Override
@@ -56,4 +58,5 @@ public class student_dashboard extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
 }
