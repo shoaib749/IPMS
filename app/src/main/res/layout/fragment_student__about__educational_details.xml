@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".student_ui.Student_About_EducationalDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:padding="3dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="18sp"
+                    android:layout_weight="50"
+                    android:text="@string/user_id_email_id"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:padding="3dp"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:layout_weight="50"
+                    android:text="@string/mansi_1234"/>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/name"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:padding="3dp"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/mansi_chitriv"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/student_mobile_number"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/_7666781735"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/parent_mobile_number"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/_9823814229"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/educational_details"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="3dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/department"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="5dp"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/information_technology"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/semester"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:padding="3dp"
+                android:text="@string/_6"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/registration_number"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/_19010472"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/_10th_year_of_passing"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/_2016"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/_10th_percentage"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/_90"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/_12th_year_of_passing"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/_2018"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/diploma_year_of_passing"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:textAlignment="center"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorPrimary"
+                android:padding="3dp"
+                android:textSize="16sp"
+                android:layout_weight="50"
+                android:text="@string/minus"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/diploma_percentage"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/minus"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/engineering_admission_year_TV"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:textAlignment="center"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorPrimary"
+                android:padding="3dp"
+                android:textSize="16sp"
+                android:layout_weight="50"
+                android:text="@string/_2020"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/_1st_semester_sgpa"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/_7_5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/_2nd_semester_sgpa"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/_7_5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/_3rd_semester_sgpa"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/_7_5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/_4th_semster_sgpa"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/_7_5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:padding="3dp"
+                android:text="@string/_5th_semster_sgpa"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/_7_5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/_6th_semster_sgpa"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/_7_5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/_7th_semster_sgpa"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/_7_5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/_8th_semster_sgpa"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/_7_5"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -39,12 +39,12 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/First_name_TV"
+            android:id="@+id/Company_Name_TV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
             android:layout_marginTop="20dp"
-            android:text="@string/first_name"
+            android:text="@string/company_name_Small"
             android:textColor="@color/black"
             android:textSize="@dimen/text_view_size"
             android:textStyle="bold"
@@ -54,12 +54,13 @@
             app:layout_constraintTop_toBottomOf="@+id/add_internship_TV" />
 
         <EditText
-            android:id="@+id/First_Name_ET"
+            android:id="@+id/Company_name_ET"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:autofillHints="Name"
+            android:layout_marginTop="0dp"
             android:background="@drawable/name"
             android:inputType="textPersonName"
             android:paddingStart="20dp"
@@ -71,61 +72,29 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_percent="0.07"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/First_name_TV" />
+            app:layout_constraintTop_toBottomOf="@+id/Company_Name_TV" />
 
         <TextView
-            android:id="@+id/Last_name_TV"
+            android:id="@+id/Batch_TV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
-            android:layout_marginTop="20dp"
-            android:text="@string/last_name"
+            android:layout_marginTop="16dp"
+            android:text="@string/batch"
             android:textColor="@color/black"
             android:textSize="@dimen/text_view_size"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/First_Name_ET" />
+            app:layout_constraintTop_toBottomOf="@+id/Company_name_ET" />
 
         <EditText
-            android:id="@+id/Last_Name_ET"
+            android:id="@+id/Batch_ET"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:autofillHints=""
-            android:background="@drawable/name"
-            android:inputType="textPersonName"
-            android:paddingStart="20dp"
-            android:paddingTop="10dp"
-            android:paddingEnd="10dp"
-            android:paddingBottom="10dp"
-            android:textColor="@color/black"
-            android:textSize="@dimen/edit_text_font_size"
-            app:layout_constraintEnd_toEndOf="@+id/First_Name_ET"
-            app:layout_constraintHeight_percent="0.07"
-            app:layout_constraintStart_toStartOf="@+id/First_Name_ET"
-            app:layout_constraintTop_toBottomOf="@+id/Last_name_TV" />
-
-        <TextView
-            android:id="@+id/Email_address_TV"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="20dp"
-            android:text="@string/email_address"
-            android:textColor="@color/black"
-            android:textSize="@dimen/text_view_size"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Last_Name_ET" />
-
-        <EditText
-            android:id="@+id/Email_address_ET"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:autofillHints=""
+            android:layout_marginTop="0dp"
             android:background="@drawable/name"
             android:inputType="textEmailAddress"
             android:paddingStart="20dp"
@@ -134,10 +103,10 @@
             android:paddingBottom="10dp"
             android:textColor="@color/black"
             android:textSize="@dimen/edit_text_font_size"
-            app:layout_constraintEnd_toEndOf="@+id/Last_Name_ET"
+            app:layout_constraintEnd_toEndOf="@+id/Company_name_ET"
             app:layout_constraintHeight_percent="0.07"
-            app:layout_constraintStart_toStartOf="@+id/Last_Name_ET"
-            app:layout_constraintTop_toBottomOf="@+id/Email_address_TV" />
+            app:layout_constraintStart_toStartOf="@+id/Company_name_ET"
+            app:layout_constraintTop_toBottomOf="@+id/Batch_TV" />
 
         <TextView
             android:id="@+id/Start_date_TV"
@@ -152,7 +121,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Email_address_ET" />
+            app:layout_constraintTop_toBottomOf="@+id/Batch_ET" />
 
         <EditText
             android:id="@+id/Start_date_ET"
@@ -172,9 +141,9 @@
             android:paddingBottom="10dp"
             android:textColor="@color/black"
             android:textSize="@dimen/edit_text_font_size"
-            app:layout_constraintEnd_toEndOf="@+id/Email_address_ET"
+            app:layout_constraintEnd_toEndOf="@+id/Batch_ET"
             app:layout_constraintHeight_percent="0.07"
-            app:layout_constraintStart_toStartOf="@+id/Email_address_ET"
+            app:layout_constraintStart_toStartOf="@+id/Batch_ET"
             app:layout_constraintTop_toBottomOf="@+id/Start_date_TV" />
 
         <TextView
@@ -182,7 +151,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="12dp"
             android:text="@string/end_date"
             android:textColor="@color/black"
             android:textSize="@dimen/text_view_size"

@@ -10,27 +10,31 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.unicon.ipms.R;
 
-public class intern_adaptor extends RecyclerView.Adapter<intern_adaptor.holder> {
+public class yourplaceAdaptor extends RecyclerView.Adapter<yourplaceAdaptor.holder> {
 
     String data[];
+    String sal[];
 
-    public intern_adaptor(String[] data) {
+    public yourplaceAdaptor(String[] data,String[] sal) {
         this.data = data;
+        this.sal=sal;
     }
 
     @NonNull
     @Override
     public holder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        LayoutInflater inflator = LayoutInflater.from(parent.getContext());
-        View view = inflator.inflate(R.layout.student_company_list, parent, false);
+        LayoutInflater inflator=LayoutInflater.from(parent.getContext());
+        View view=inflator.inflate(R.layout.fragment_your_placements_student,parent,false);
         return new holder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull holder holder, int position) {
-        String title = data[position];
+        String title=data[position];
+        String salary=sal[position];
         holder.tv.setText(title);
+        holder.salary_1.setText(salary);
 
     }
 
@@ -40,15 +44,15 @@ public class intern_adaptor extends RecyclerView.Adapter<intern_adaptor.holder> 
     }
 
 
-    class holder extends RecyclerView.ViewHolder {
-        private TextView tv;
-
+    class holder extends RecyclerView.ViewHolder
+    {
+        private TextView tv,salary_1;
         public holder(@NonNull View itemView) {
             super(itemView);
-            tv = (TextView) itemView.findViewById(R.id.Name_TV);
+            tv=(TextView) itemView.findViewById(R.id.Company_Name_TV_Card);
+            salary_1=(TextView) itemView.findViewById(R.id.salary_TV_card);
         }
-
-        public TextView getView() {
+        public TextView getView(){
             return tv;
         }
     }

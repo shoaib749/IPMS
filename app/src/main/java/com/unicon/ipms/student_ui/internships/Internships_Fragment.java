@@ -31,7 +31,7 @@ public class Internships_Fragment extends Fragment {
 
         InternshipsViewModel internshipsViewModel =
                 new ViewModelProvider(this).get(InternshipsViewModel.class);
-
+        getActivity().setTitle("Your actionbar title");
         binding = StudentFragmentInternshipsBinding.inflate(inflater, container, false);
         RecyclerView company_list=binding.recyclerviewIntern;
         String[] list={"Capgemini","TCS","Infosys","Infocept","Persistent","Amazon","Google","Facebook"};
