@@ -134,4 +134,6 @@
     <string name="_12">12</string>
     <string name="salary_annum">Salary (Annum)</string>
     <string name="salary">Salary</string>
+    <string name="duration">Duration</string>
+    <string name="registration_link">Registration Link</string>
 </resources>
