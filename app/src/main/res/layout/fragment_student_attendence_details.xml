@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".student_ui.student_attendence_details"
+    android:background="#F2F2F2">
+
+    <TextView
+        android:id="@+id/Mark_Attendance_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/name"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="@string/mark_attendance"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/name"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="@string/my_internships"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Student_Biodata_TV"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Student_Biodata_TV"
+        app:layout_constraintTop_toBottomOf="@+id/Student_Biodata_TV"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Student_FeedBack_TV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/name"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/student_feedback_TV"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/Weekly_attendance_TV"
+        app:layout_constraintStart_toStartOf="@+id/Weekly_attendance_TV"
+        app:layout_constraintTop_toBottomOf="@+id/Weekly_attendance_TV" />
+
+    <TextView
+        android:id="@+id/Weekly_attendance_TV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/name"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/weekly_attendance"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/Mark_Attendance_TV"
+        app:layout_constraintStart_toStartOf="@+id/Mark_Attendance_TV"
+        app:layout_constraintTop_toBottomOf="@+id/Mark_Attendance_TV" />
+
+    <TextView
+        android:id="@+id/Student_Biodata_TV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/name"
+        android:paddingTop="20dp"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="20dp"
+        android:text="@string/student_biodate"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/Student_FeedBack_TV"
+        app:layout_constraintStart_toStartOf="@+id/Student_FeedBack_TV"
+        app:layout_constraintTop_toBottomOf="@+id/Student_FeedBack_TV" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

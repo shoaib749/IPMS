@@ -5,12 +5,28 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.unicon.ipms.constant;
 import com.unicon.ipms.databinding.StudentFragmentHomeBinding;
+import com.unicon.ipms.requestHandler;
+import com.unicon.ipms.sharedPrefManager;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class HomeFragment extends Fragment {
 
@@ -24,8 +40,42 @@ public class HomeFragment extends Fragment {
         binding = StudentFragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textHome;
-        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView textView = binding.textView2;
+//        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        StringRequest stringRequest = new StringRequest(
+                Request.Method.POST,
+                constant.URL_STUDENT_COUNT,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        try {
+                            JSONObject object = new JSONObject(response);
+                            if(!object.getBoolean("error")){
+                                textView.setText(object.getString("count")+" Offers");
+                            }else{
+                                Toast.makeText(getContext(), object.getString("message"), Toast.LENGTH_LONG).show();
+                            }
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                            Toast.makeText(getContext(),"error"+e, Toast.LENGTH_LONG).show();
+                        }
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(getContext(), error.getMessage(), Toast.LENGTH_LONG).show();
+            }
+        }
+        ){
+            @Nullable
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String,String> params = new HashMap<>();
+                params.put("email_id",sharedPrefManager.getInstance(getContext()).getEmail());
+                return params;
+            }
+        };
+        requestHandler.getInstance(getContext()).addToRequestQueue(stringRequest);
         return root;
     }
 

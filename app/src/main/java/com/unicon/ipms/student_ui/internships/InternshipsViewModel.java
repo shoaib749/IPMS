@@ -9,7 +9,7 @@ public class InternshipsViewModel extends ViewModel {
 
     public InternshipsViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is Internship fragment");
+        mText.setValue("Internships Opportunities");
     }
 
     public LiveData<String> getText() {

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".student_ui.visiting_student_Company_details">
+
+    <TextView
+        android:id="@+id/ICompany_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:padding="10dp"
+        android:text="@string/company_name"
+        android:textAlignment="center"
+        android:textColor="@color/gray"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/IEligibility_Criteria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Eligitbility Criteria"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ICompany_TV" />
+
+    <TextView
+        android:id="@+id/IEligibility_Criteria_ET"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/student_company_details_box"
+        android:paddingStart="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/ICompany_TV"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ICompany_TV"
+        app:layout_constraintTop_toBottomOf="@+id/IEligibility_Criteria" />
+
+    <TextView
+        android:id="@+id/Start_Date_TV_Int"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Start Date"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/IEligibility_Criteria"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="@+id/IEligibility_Criteria"
+        app:layout_constraintTop_toBottomOf="@+id/IEligibility_Criteria_ET" />
+
+    <TextView
+        android:id="@+id/Start_Date_ET_Int"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/student_company_details_box"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:paddingStart="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/IEligibility_Criteria_ET"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/IEligibility_Criteria_ET"
+        app:layout_constraintTop_toBottomOf="@+id/Start_Date_TV_Int" />
+
+    <TextView
+        android:id="@+id/Duration_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/duration"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/Start_Date_TV_Int"
+        app:layout_constraintHorizontal_bias="0.357"
+        app:layout_constraintStart_toStartOf="@+id/Start_Date_TV_Int"
+        app:layout_constraintTop_toBottomOf="@+id/Start_Date_ET_Int" />
+
+    <TextView
+        android:id="@+id/Duration_ET"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/student_company_details_box"
+        android:padding="10dp"
+        android:paddingStart="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/Start_Date_ET_Int"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintStart_toStartOf="@+id/Start_Date_ET_Int"
+        app:layout_constraintTop_toBottomOf="@+id/Duration_TV" />
+
+    <TextView
+        android:id="@+id/Reg_Link_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/registration_link"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/Duration_TV"
+        app:layout_constraintStart_toStartOf="@+id/Duration_TV"
+        app:layout_constraintTop_toBottomOf="@+id/Duration_ET" />
+
+    <TextView
+        android:id="@+id/Reg_Link_ET"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/student_company_details_box"
+        android:padding="10dp"
+        android:paddingStart="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Duration_ET"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Duration_ET"
+        app:layout_constraintTop_toBottomOf="@+id/Reg_Link_TV"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
