@@ -12,6 +12,7 @@
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/drawable/round_username.xml" value="0.1515" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/drawable/side_nav_bar.xml" value="0.1515" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_admin_login.xml" value="0.22777777777777777" />
+        <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_more_info.xml" value="0.23981481481481481" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/admin_fragment_add_placement_details.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/admin_fragment_check_student_profile.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/content_student_dashboard.xml" value="0.25416666666666665" />
@@ -27,6 +28,7 @@
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/nav_header_admin_dashboard.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/nav_header_student_dashboard.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/student_company_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/student_fragment_home.xml" value="0.23981481481481481" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/student_fragment_internship.xml" value="0.22777777777777777" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/student_fragment_internships.xml" value="0.22777777777777777" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/student_fragment_placement.xml" value="0.22777777777777777" />

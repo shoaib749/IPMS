@@ -42,50 +42,55 @@ public class Placements_Fragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         binding = StudentFragmentPlacementBinding.inflate(inflater, container, false);
         RecyclerView company_list=binding.recyclerview;
-        String[] list = new String[100];
-//        String[] list={"Capgemini","TCS","Infosys","Infocept","Persistent","Amazon","Google","Facebook"};
-        StringRequest stringRequest = new StringRequest(
-                Request.Method.POST,
-                constant.URL_STUDENT_ALL_CURRENT_DRIVE,
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        try {
-                               JSONArray array = new JSONArray(response);
-                               JSONObject object =null;
-                               for(int i=0;i<array.length();i++){
-                                   object = array.getJSONObject(i);
-                                   String c_name = object.getString("c_name");
-                                   Toast.makeText(getContext(),object.getString("c_name"),Toast.LENGTH_LONG).show();
-                                   list[i] = c_name;
-                               }
-                               Toast.makeText(getContext(),object.getString("c_name"),Toast.LENGTH_LONG).show();
-                                   
-
-
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                            Toast.makeText(getContext(),"error"+e,Toast.LENGTH_LONG).show();
-                        }
-
-                    }
-                }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Toast.makeText(getContext(), error.getMessage(), Toast.LENGTH_SHORT).show();
-            }
-        }
-        ){
-            @Nullable
-            @Override
-            protected Map<String, String> getParams() throws AuthFailureError {
-                Map<String,String> params = new HashMap<>();
-                return params;
-            }
-        };
-        requestHandler.getInstance(getContext()).addToRequestQueue(stringRequest);
+//        String[] list = new String[100];
+////        String[] list={"Capgemini","TCS","Infosys","Infocept","Persistent","Amazon","Google","Facebook"};
+//        StringRequest stringRequest = new StringRequest(
+//                Request.Method.POST,
+//                constant.URL_STUDENT_ALL_CURRENT_DRIVE,
+//                new Response.Listener<String>() {
+//                    @Override
+//                    public void onResponse(String response) {
+//                        try {
+//                               JSONArray array = new JSONArray(response);
+//                               JSONObject object =null;
+//                               for(int i=0;i<array.length();i++){
+//                                   object = array.getJSONObject(i);
+//                                   String c_name = object.getString("c_name");
+//                                   Toast.makeText(getContext(),object.getString("c_name"),Toast.LENGTH_LONG).show();
+//                                   list[i] = c_name;
+//                               }
+//                               Toast.makeText(getContext(),object.getString("c_name"),Toast.LENGTH_LONG).show();
+//
+//
+//
+//                        } catch (JSONException e) {
+//                            e.printStackTrace();
+//                            Toast.makeText(getContext(),"error"+e,Toast.LENGTH_LONG).show();
+//                        }
+//
+//                    }
+//                }, new Response.ErrorListener() {
+//            @Override
+//            public void onErrorResponse(VolleyError error) {
+//                Toast.makeText(getContext(), error.getMessage(), Toast.LENGTH_SHORT).show();
+//            }
+//        }
+//        ){
+//            @Nullable
+//            @Override
+//            protected Map<String, String> getParams() throws AuthFailureError {
+//                Map<String,String> params = new HashMap<>();
+//                return params;
+//            }
+//        };
+//        requestHandler.getInstance(getContext()).addToRequestQueue(stringRequest);
+        ArrayList<String> arr=new ArrayList<>();
+        arr.add("Capgemini");
+        arr.add("TCS");
+        arr.add("Infosys");
+        arr.add("Infocept");
         company_list.setLayoutManager(new LinearLayoutManager(this.getContext()));
-        company_list.setAdapter(new recyclerviewadaptor(list));
+        company_list.setAdapter(new recyclerviewadaptor(arr));
 
         PlacementsViewModel placementsViewModel =
                 new ViewModelProvider(this).get(PlacementsViewModel.class);

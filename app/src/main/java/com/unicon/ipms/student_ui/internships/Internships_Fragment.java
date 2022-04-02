@@ -22,6 +22,8 @@ import com.unicon.ipms.databinding.StudentFragmentPlacementBinding;
 import com.unicon.ipms.student_ui.Adaptor.recyclerviewadaptor;
 import com.unicon.ipms.student_ui.home.HomeViewModel;
 
+import java.util.ArrayList;
+
 public class Internships_Fragment extends Fragment {
 
     private StudentFragmentInternshipsBinding binding;
@@ -34,9 +36,26 @@ public class Internships_Fragment extends Fragment {
         getActivity().setTitle("Your actionbar title");
         binding = StudentFragmentInternshipsBinding.inflate(inflater, container, false);
         RecyclerView company_list=binding.recyclerviewIntern;
-        String[] list={"Capgemini","TCS","Infosys","Infocept","Persistent","Amazon","Google","Facebook"};
+        ArrayList<String> arr=new ArrayList<>();
+        arr.add("Capgemini");
+        arr.add("TCS");
+        arr.add("Infosys");
+        arr.add("Infocept");
+        arr.add("Capgemini");
+        arr.add("TCS");
+        arr.add("Infosys");
+        arr.add("Infocept");
+        arr.add("Capgemini");
+        arr.add("TCS");
+        arr.add("Infosys");
+        arr.add("Infocept");
+        arr.add("Capgemini");
+        arr.add("TCS");
+        arr.add("Infosys");
+        arr.add("Infocept");
+//      String[] list={"Capgemini","TCS","Infosys","Infocept","Persistent","Amazon","Google","Facebook"};
         company_list.setLayoutManager(new LinearLayoutManager(this.getContext()));
-        company_list.setAdapter(new recyclerviewadaptor(list));
+        company_list.setAdapter(new recyclerviewadaptor(arr));
 
         View root = binding.getRoot();
 

@@ -10,12 +10,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.unicon.ipms.R;
 
+import java.util.ArrayList;
+
 public class recyclerviewadaptor extends RecyclerView.Adapter<recyclerviewadaptor.holder> {
 
-    String data[];
+    ArrayList<String> arr;
 
-    public recyclerviewadaptor(String[] data) {
-        this.data = data;
+    public recyclerviewadaptor(ArrayList<String> data) {
+        this.arr = data;
     }
 
     @NonNull
@@ -29,14 +31,14 @@ public class recyclerviewadaptor extends RecyclerView.Adapter<recyclerviewadapto
 
     @Override
     public void onBindViewHolder(@NonNull holder holder, int position) {
-        String title=data[position];
+        String title=arr.get(position);
         holder.tv.setText(title);
 
     }
 
     @Override
     public int getItemCount() {
-        return data.length;
+        return arr.size();
     }
 
 
