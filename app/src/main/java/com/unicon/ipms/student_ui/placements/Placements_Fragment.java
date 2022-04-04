@@ -3,6 +3,7 @@ package com.unicon.ipms.student_ui.placements;
 import androidx.annotation.Nullable;
 import androidx.lifecycle.ViewModelProvider;
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -10,19 +11,25 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
+import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.unicon.ipms.constant;
 import com.unicon.ipms.databinding.StudentFragmentPlacementBinding;
+import com.unicon.ipms.getAllDriveNamePlacementModel;
 import com.unicon.ipms.requestHandler;
 import com.unicon.ipms.student_ui.Adaptor.recyclerviewadaptor;
 
@@ -42,55 +49,38 @@ public class Placements_Fragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         binding = StudentFragmentPlacementBinding.inflate(inflater, container, false);
         RecyclerView company_list=binding.recyclerview;
-//        String[] list = new String[100];
-////        String[] list={"Capgemini","TCS","Infosys","Infocept","Persistent","Amazon","Google","Facebook"};
-//        StringRequest stringRequest = new StringRequest(
-//                Request.Method.POST,
-//                constant.URL_STUDENT_ALL_CURRENT_DRIVE,
-//                new Response.Listener<String>() {
-//                    @Override
-//                    public void onResponse(String response) {
-//                        try {
-//                               JSONArray array = new JSONArray(response);
-//                               JSONObject object =null;
-//                               for(int i=0;i<array.length();i++){
-//                                   object = array.getJSONObject(i);
-//                                   String c_name = object.getString("c_name");
-//                                   Toast.makeText(getContext(),object.getString("c_name"),Toast.LENGTH_LONG).show();
-//                                   list[i] = c_name;
-//                               }
-//                               Toast.makeText(getContext(),object.getString("c_name"),Toast.LENGTH_LONG).show();
-//
-//
-//
-//                        } catch (JSONException e) {
-//                            e.printStackTrace();
-//                            Toast.makeText(getContext(),"error"+e,Toast.LENGTH_LONG).show();
-//                        }
-//
-//                    }
-//                }, new Response.ErrorListener() {
-//            @Override
-//            public void onErrorResponse(VolleyError error) {
-//                Toast.makeText(getContext(), error.getMessage(), Toast.LENGTH_SHORT).show();
-//            }
-//        }
-//        ){
-//            @Nullable
-//            @Override
-//            protected Map<String, String> getParams() throws AuthFailureError {
-//                Map<String,String> params = new HashMap<>();
-//                return params;
-//            }
-//        };
-//        requestHandler.getInstance(getContext()).addToRequestQueue(stringRequest);
         ArrayList<String> arr=new ArrayList<>();
-        arr.add("Capgemini");
-        arr.add("TCS");
-        arr.add("Infosys");
-        arr.add("Infocept");
-        company_list.setLayoutManager(new LinearLayoutManager(this.getContext()));
-        company_list.setAdapter(new recyclerviewadaptor(arr));
+        final ProgressDialog progressDialog = new ProgressDialog(getContext());
+        progressDialog.setMessage("Loading...");
+        progressDialog.show();
+        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.POST,
+                constant.URL_STUDENT_ALL_CURRENT_DRIVE,null,
+                new Response.Listener<JSONArray>() {
+                    @Override
+                    public void onResponse(JSONArray response) {
+                        progressDialog.dismiss();
+                        for (int i = 0; i < response.length(); i++) {
+                            try {
+                                JSONObject object = response.getJSONObject(i);
+                                arr.add(object.getString("c_name"));
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                                progressDialog.dismiss();
+                            }
+                        }
+                        company_list.setLayoutManager(new LinearLayoutManager(getContext()));
+                        company_list.setAdapter(new recyclerviewadaptor(arr));
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.e("Volley", error.toString());
+                progressDialog.dismiss();
+            }
+        }
+        );
+        RequestQueue requestQueue = Volley.newRequestQueue(getContext());
+        requestQueue.add(jsonArrayRequest);
 
         PlacementsViewModel placementsViewModel =
                 new ViewModelProvider(this).get(PlacementsViewModel.class);
