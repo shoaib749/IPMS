@@ -28,4 +28,23 @@
         android:name="com.unicon.ipms.student_ui.placement_status.Placement_Status_Fragment"
         android:label="Placement Status"
         tools:layout="@layout/fragment_student__about__educational_details" />
+
+    <fragment
+        android:id="@+id/nav_add_internship"
+        android:name="com.unicon.ipms.student_ui.Student_add_internship"
+        android:label="Add Internship"
+        tools:layout="@layout/fragment_student_add_internship" />
+
+    <fragment
+        android:id="@+id/nav_attendence_details"
+        android:name="com.unicon.ipms.student_ui.student_attendence_details"
+        android:label="My Internship"
+        tools:layout="@layout/fragment_student_attendence_details" />
+
+    <fragment
+        android:id="@+id/nav_your_placements"
+        android:name="com.unicon.ipms.student_ui.fragment_your_placements_student"
+        android:label="My Internship"
+        tools:layout="@layout/fragment_your_placements_student" />
+
 </navigation>

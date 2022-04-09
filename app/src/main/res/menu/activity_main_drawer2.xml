@@ -11,18 +11,40 @@
             android:title="@string/menu_home" />
 
         <item
-            android:id="@+id/nav_internship"
-            android:icon="@drawable/ic_folder"
-            android:title="@string/internships" />
-
-        <item
             android:id="@+id/nav_placement"
             android:icon="@drawable/ic_folder"
             android:title="@string/placements" />
 
         <item
+            android:id="@+id/nav_internship"
+            android:icon="@drawable/ic_folder"
+            android:title="@string/internships" />
+
+        <item
+            android:id="@+id/nav_add_internship"
+            android:icon="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:title="@string/add_internship" />
+
+        <item
+            android:id="@+id/nav_attendence_details"
+            android:icon="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:title="@string/my_internship" />
+
+        <item
             android:id="@+id/nav_placement_status"
             android:icon="@drawable/ic_folder"
             android:title="@string/placement_status" />
+
+        <item
+            android:id="@+id/nav_your_placements"
+            android:icon="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:title="@string/see_your_current_status" />
+
+
+        <item
+            android:id="@+id/Upload_offer_letters"
+            android:icon="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:title="@string/upload_offer_letters" />
+
     </group>
 </menu>

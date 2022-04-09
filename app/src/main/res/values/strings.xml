@@ -136,4 +136,8 @@
     <string name="salary">Salary</string>
     <string name="duration">Duration</string>
     <string name="registration_link">Registration Link</string>
+    <string name="my_internship">My Internship</string>
+    <string name="current_drives">Current Drives</string>
+    <string name="see_your_current_status">See Your Current Status</string>
+    <string name="upload_offer_letters">Upload Offer letters</string>
 </resources>
