@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".student_ui.student_attendence_details"
-    android:background="#F2F2F2">
+    android:background="#F2F2F2"
+    tools:context=".student_ui.student_attendence_details">
 
     <TextView
         android:id="@+id/Mark_Attendance_TV"
@@ -27,11 +27,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/my_internship_TV"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:background="@drawable/name"
+        android:clickable="true"
+        android:focusable="true"
         android:paddingTop="20dp"
         android:paddingBottom="20dp"
         android:text="@string/my_internships"
@@ -50,10 +52,10 @@
         android:id="@+id/Student_FeedBack_TV"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:background="@drawable/name"
         android:paddingTop="20dp"
         android:paddingBottom="20dp"
-        android:layout_marginTop="30dp"
         android:text="@string/student_feedback_TV"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -67,10 +69,10 @@
         android:id="@+id/Weekly_attendance_TV"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:background="@drawable/name"
         android:paddingTop="20dp"
         android:paddingBottom="20dp"
-        android:layout_marginTop="30dp"
         android:text="@string/weekly_attendance"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -84,9 +86,9 @@
         android:id="@+id/Student_Biodata_TV"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:background="@drawable/name"
         android:paddingTop="20dp"
-        android:layout_marginTop="30dp"
         android:paddingBottom="20dp"
         android:text="@string/student_biodate"
         android:textAlignment="center"

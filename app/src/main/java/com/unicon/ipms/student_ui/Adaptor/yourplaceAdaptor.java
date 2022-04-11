@@ -49,7 +49,7 @@ public class yourplaceAdaptor extends RecyclerView.Adapter<yourplaceAdaptor.hold
         private TextView tv,salary_1;
         public holder(@NonNull View itemView) {
             super(itemView);
-            tv=(TextView) itemView.findViewById(R.id.Company_Name_TV_Card);
+            tv=(TextView) itemView.findViewById(R.id.Company_Name_TV_Card_Place);
             salary_1=(TextView) itemView.findViewById(R.id.salary_TV_card);
         }
         public TextView getView(){

@@ -53,9 +53,9 @@ public class myinternAdaptor extends RecyclerView.Adapter<myinternAdaptor.holder
 
         public holder(@NonNull View itemView) {
             super(itemView);
-            tv = (TextView) itemView.findViewById(R.id.Company_Name_TV);
-            sd = (TextView) itemView.findViewById(R.id.Start_Date_TV);
-            ed = (TextView) itemView.findViewById(R.id.End_Date_TV);
+            tv = (TextView) itemView.findViewById(R.id.Company_Name_TV_Card_Intern);
+            sd = (TextView) itemView.findViewById(R.id.Start_Date_TV_Card_Intern);
+            ed = (TextView) itemView.findViewById(R.id.End_Date_TV_Card_Intern);
         }
 
         public TextView getView() {
