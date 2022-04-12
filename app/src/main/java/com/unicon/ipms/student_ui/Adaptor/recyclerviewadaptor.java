@@ -45,7 +45,6 @@ public class recyclerviewadaptor extends RecyclerView.Adapter<recyclerviewadapto
             public void onClick(View view) {
                 Bundle bundle = new Bundle();
                 bundle.putString("c_name",title);
-                //visiting_student_Company_details fragment_company_details = new visiting_student_Company_details();
 
                 AppCompatActivity activity = (AppCompatActivity) view.getContext();
                 visiting_student_Company_details fragment_company_details = new visiting_student_Company_details();
@@ -54,9 +53,6 @@ public class recyclerviewadaptor extends RecyclerView.Adapter<recyclerviewadapto
                         .beginTransaction()
                         .replace(R.id.nav_host_fragment_content_student_dashboard, fragment_company_details)
                         .commit();
-
-//                FragmentManager fragmentManager = getFragmentManager();
-//                fragmentManager.beginTransaction().replace(getParentFragment().getId(), fragment).commit();
             }
         });
     }
