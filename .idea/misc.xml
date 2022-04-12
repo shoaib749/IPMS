@@ -12,8 +12,12 @@
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/drawable/round_username.xml" value="0.1515" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/drawable/side_nav_bar.xml" value="0.1515" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_admin_login.xml" value="0.22777777777777777" />
+        <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_more_info.xml" value="0.23981481481481481" />
+        <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_student_dashboard.xml" value="0.1" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/admin_fragment_add_placement_details.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/admin_fragment_check_student_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/admin_fragment_home.xml" value="0.1" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/content_student_dashboard.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/fragment_internship_student_company_details.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/fragment_student__about__educational_details.xml" value="0.2175925925925926" />
@@ -21,12 +25,13 @@
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/fragment_student_add_internship.xml" value="0.264" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/fragment_student_attendence_details.xml" value="0.22777777777777777" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/fragment_student_company_name_start_end_date.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/fragment_student_my__internships_fragment.xml" value="0.264" />
+        <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/fragment_student_my__internships_fragment.xml" value="0.10505836575875487" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/fragment_update__profile__pic__student.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/fragment_your_placements_student.xml" value="0.25052083333333336" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/nav_header_admin_dashboard.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/nav_header_student_dashboard.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/student_company_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/student_fragment_home.xml" value="0.23981481481481481" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/student_fragment_internship.xml" value="0.22777777777777777" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/student_fragment_internships.xml" value="0.22777777777777777" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS/app/src/main/res/layout/student_fragment_placement.xml" value="0.22777777777777777" />
@@ -52,6 +57,15 @@
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS10/app/src/main/res/layout/activity_more_info.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS10/app/src/main/res/layout/activity_sign_in.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS10/app/src/main/res/layout/activity_splash_screen.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Unicon/StudioProjects/IPMS_02042022/app/src/main/res/drawable/ic_baseline_account_box_24.xml" value="0.1" />
+        <entry key="..\:/Users/Unicon/StudioProjects/IPMS_02042022/app/src/main/res/layout/content_student_dashboard.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Unicon/StudioProjects/IPMS_02042022/app/src/main/res/layout/fragment_student__company_details_fragment.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Unicon/StudioProjects/IPMS_02042022/app/src/main/res/layout/fragment_student_company_name_start_end_date.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Unicon/StudioProjects/IPMS_02042022/app/src/main/res/layout/fragment_student_my__internships_fragment.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Unicon/StudioProjects/IPMS_02042022/app/src/main/res/layout/fragment_your_placements_student.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Unicon/StudioProjects/IPMS_02042022/app/src/main/res/layout/student_fragment_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Unicon/StudioProjects/IPMS_02042022/app/src/main/res/layout/student_fragment_internship.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Unicon/StudioProjects/IPMS_02042022/app/src/main/res/layout/student_fragment_internships.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Unicon/StudioProjects/IPMS_2/app/src/main/res/layout/activity_create_info.xml" value="0.1" />
         <entry key="..\:/Users/Unicon/StudioProjects/IPMS_3/app/src/main/res/layout/activity_admin_dashboard.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Unicon/StudioProjects/IPMS_3/app/src/main/res/layout/activity_admin_login.xml" value="0.20416666666666666" />
@@ -78,14 +92,13 @@
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/drawable/side_nav_bar.xml" value="0.1345" />
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_admin_dashboard.xml" value="0.1" />
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_admin_login.xml" value="0.1" />
-        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_create_info.xml" value="0.1" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_create_info.xml" value="0.22" />
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_more_info.xml" value="0.25" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_more_info.xml" value="0.1" />
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_sign_in.xml" value="0.22" />
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_student_dashboard.xml" value="0.25" />
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/activity_test_data.xml" value="0.1" />
-        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/admin_fragment_add_current_drives.xml" value="0.1675213675213675" />
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/admin_fragment_add_placement_details.xml" value="0.17192982456140352" />
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/admin_fragment_check_student_profile.xml" value="0.17192982456140352" />
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/admin_fragment_home.xml" value="0.22" />
@@ -96,16 +109,7 @@
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/fragment_gallery.xml" value="0.15806159420289856" />
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/fragment_internships.xml" value="0.1" />
-        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/fragment_student__about__educational_details.xml" value="0.1" />
-        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/fragment_student__company_details_fragment.xml" value="0.1" />
-        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/fragment_student_add_internship.xml" value="0.1" />
-        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/fragment_student_attendence_details.xml" value="0.25" />
-        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/fragment_student_company_name_start_end_date.xml" value="0.1" />
-        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/fragment_student_my__internships_fragment.xml" value="0.18" />
-        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/fragment_update__profile__pic__student.xml" value="0.1" />
-        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/fragment_your_placements_student.xml" value="0.1" />
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/frgament_check_student_profile.xml" value="0.1" />
-        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/nav_header_admin_dashboard.xml" value="0.1" />
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/nav_header_student_dashboard.xml" value="0.17192982456140352" />
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/nav_header_student_daskboard.xml" value="0.17192982456140352" />
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/student_fragment_home.xml" value="0.17192982456140352" />
@@ -113,10 +117,8 @@
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/student_fragment_internships.xml" value="0.17192982456140352" />
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/student_fragment_placement.xml" value="0.1" />
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/student_fragment_placement_status.xml" value="0.17192982456140352" />
-        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/student_my_internship_cardview.xml" value="0.15" />
-        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/layout/your_placement_cardview.xml" value="0.1675213675213675" />
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/menu/activity_main_drawer.xml" value="0.33" />
-        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/menu/activity_main_drawer2.xml" value="0.21" />
+        <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/menu/activity_main_drawer2.xml" value="0.17192982456140352" />
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/menu/admin_dashboard.xml" value="0.20102564102564102" />
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/menu/admin_dashboard2.xml" value="0.1696969696969697" />
         <entry key="..\:/Users/harsh/AndroidStudioProjects/IPMS/app/src/main/res/menu/student_dashboard.xml" value="0.17192982456140352" />

@@ -1,7 +1,7 @@
 package com.unicon.ipms;
 
 public class constant {
-    public static final String ROOT_URL="http://192.168.0.106/IPMS_Script/v1/"; //TODO change this
+    public static final String ROOT_URL="http://192.168.29.240/IPMS_Script/v1/"; //TODO change this
     public static final String URL_REGISTER =ROOT_URL+"userRegistration.php";
     public static final String URL_LOGIN = ROOT_URL+"userLogin.php";
     public static final String URL_MOREINFO = ROOT_URL+"moreInfo.php";
@@ -12,5 +12,6 @@ public class constant {
     public static final String URL_STUDENT_INDI_CURRENT_DRIVE = ROOT_URL+"getCurrentDrive.php";
     public static final String URL_STUDENT_ALL_CURRENT_DRIVE = ROOT_URL+"allCurrentDrive.php";
     public static final String URL_STUDENT_ALL_INTERNSHIP_DRIVE = ROOT_URL+"allIntenshipDrive.php";
+    public static final String URL_STUDENT_INTENSHIP_DATE = ROOT_URL+"internshipStartEnd.php";
 
 }

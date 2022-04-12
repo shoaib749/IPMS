@@ -34,7 +34,7 @@ public class student_my_Internships_fragment extends Fragment {
         String[] start={"10-09-2021","12-05-2021","-","-","-","-","-","-"};
         String[] end={"10-12-2021","12-08-2021","-","-","-","-","-","-"};
         company_list.setLayoutManager(new LinearLayoutManager(this.getContext()));
-        company_list.setAdapter(new myinternAdaptor(list,start,end));
+//        company_list.setAdapter(new myinternAdaptor(list,start,end));
         return binding.getRoot();
     }
 }

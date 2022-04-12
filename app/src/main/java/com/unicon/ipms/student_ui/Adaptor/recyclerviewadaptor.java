@@ -1,14 +1,21 @@
 package com.unicon.ipms.student_ui.Adaptor;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.unicon.ipms.R;
+import com.unicon.ipms.student_ui.visiting_student_Company_details;
 
 import java.util.ArrayList;
 
@@ -33,7 +40,25 @@ public class recyclerviewadaptor extends RecyclerView.Adapter<recyclerviewadapto
     public void onBindViewHolder(@NonNull holder holder, int position) {
         String title=arr.get(position);
         holder.tv.setText(title);
+        holder.tv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                bundle.putString("c_name",title);
+                //visiting_student_Company_details fragment_company_details = new visiting_student_Company_details();
 
+                AppCompatActivity activity = (AppCompatActivity) view.getContext();
+                visiting_student_Company_details fragment_company_details = new visiting_student_Company_details();
+                fragment_company_details.setArguments(bundle);
+                activity.getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.nav_host_fragment_content_student_dashboard, fragment_company_details)
+                        .commit();
+
+//                FragmentManager fragmentManager = getFragmentManager();
+//                fragmentManager.beginTransaction().replace(getParentFragment().getId(), fragment).commit();
+            }
+        });
     }
 
     @Override

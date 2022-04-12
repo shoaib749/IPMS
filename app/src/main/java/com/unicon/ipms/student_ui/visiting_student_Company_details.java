@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.unicon.ipms.R;
 
@@ -61,6 +62,10 @@ public class visiting_student_Company_details extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        Bundle bundle = this.getArguments();
+        if(bundle != null){
+            Toast.makeText(getContext(), "C_name"+bundle.getString("c_name"), Toast.LENGTH_SHORT).show();
+        }
         return inflater.inflate(R.layout.fragment_student__company_details_fragment, container, false);
     }
 }
