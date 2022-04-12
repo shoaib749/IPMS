@@ -1,5 +1,7 @@
 package com.unicon.ipms.student_ui.placement_status;
 
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProvider;
 
 import android.os.Bundle;
@@ -16,8 +18,14 @@ import android.widget.TextView;
 import com.unicon.ipms.R;
 import com.unicon.ipms.databinding.StudentFragmentHomeBinding;
 import com.unicon.ipms.databinding.StudentFragmentPlacementStatusBinding;
+import com.unicon.ipms.student_ui.Student_add_internship;
+import com.unicon.ipms.student_ui.fragment_your_placements_student;
 import com.unicon.ipms.student_ui.home.HomeViewModel;
 import com.unicon.ipms.student_ui.placements.PlacementsViewModel;
+import com.unicon.ipms.student_ui.student_attendence_details;
+import com.unicon.ipms.student_ui.student_my_Internships_fragment;
+
+import org.w3c.dom.Text;
 
 public class Placement_Status_Fragment extends Fragment {
 
@@ -32,6 +40,14 @@ public class Placement_Status_Fragment extends Fragment {
         binding =  StudentFragmentPlacementStatusBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
+        TextView tv=binding.textStudentPlacementStatus;
+        tv.setOnClickListener(v->{
+         //   Fragment fragment = new Student_add_internship();
+            Fragment fragment = new student_my_Internships_fragment();
+            // Insert the fragment by replacing any existing fragment
+            FragmentManager fragmentManager = getFragmentManager();
+            fragmentManager.beginTransaction().replace(getParentFragment().getId(), fragment).commit();
+        });
         final TextView textView = binding.textStudentPlacementStatus;
         placementStatusViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;

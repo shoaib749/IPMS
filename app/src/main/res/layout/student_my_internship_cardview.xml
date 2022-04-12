@@ -11,7 +11,7 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/Company_Name_TV_Card"
+            android:id="@+id/Company_Name_TV_Card_Intern"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -25,7 +25,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/Start_Date_TV_Card"
+            android:id="@+id/Start_Date_TV_Card_Intern"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
@@ -35,11 +35,11 @@
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/Company_Name_TV_Card"
+            app:layout_constraintStart_toEndOf="@+id/Company_Name_TV_Card_Intern"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/End_Date_TV_Card"
+            android:id="@+id/End_Date_TV_Card_Intern"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
@@ -52,7 +52,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/Start_Date_TV_Card"
+            app:layout_constraintStart_toEndOf="@+id/Start_Date_TV_Card_Intern"
             app:layout_constraintTop_toTopOf="parent" />
 
 

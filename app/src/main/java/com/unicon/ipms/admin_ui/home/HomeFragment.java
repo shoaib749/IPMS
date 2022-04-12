@@ -40,7 +40,9 @@ public class HomeFragment extends Fragment {
         binding = AdminFragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.TVTotalOfferCount;
+        final TextView total_placement_offers = binding.TVAdminTotalPlacementOffers;
+        final TextView total_students_placed = binding.TVAdminTotalStudentsPlaced;
+        final TextView internship_offers = binding.TVAdminInternshipOffers;
 
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST,
@@ -51,7 +53,9 @@ public class HomeFragment extends Fragment {
                         try {
                             JSONObject obj = new JSONObject(response);
                             if(!obj.getBoolean("error")){
-                                textView.setText(obj.getString("TotalOfferCount"));
+                                total_placement_offers.setText(obj.getString("TotalOfferCount"));
+                                total_students_placed.setText(obj.getString("TotalStudentCount"));
+                                internship_offers.setText(obj.getString("TotalIntenshipCount"));
                             }else{
                                 Toast.makeText(getContext(), obj.getString("message"), Toast.LENGTH_LONG).show();
                             }

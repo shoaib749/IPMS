@@ -26,14 +26,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="16dp"
             android:padding="3dp"
             android:text="@string/your_total_offers"
             android:textColor="@color/colorPrimary"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.034"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="7dp"
             android:padding="10dp"
-            android:text="@string/_3_offers"
+            android:text="0 Offers"
             android:textColor="@color/black"
             android:textSize="22sp"
             android:textStyle="bold"
@@ -51,7 +51,7 @@
             app:layout_constraintEnd_toEndOf="@+id/Your_total_offers_TV"
             app:layout_constraintStart_toStartOf="@+id/Your_total_offers_TV"
             app:layout_constraintTop_toBottomOf="@+id/Your_total_offers_TV"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.058" />
 
         <ImageView
             android:layout_width="50dp"
@@ -60,6 +60,7 @@
             android:src="@drawable/ic_calender"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/Your_total_offers_TV"
             app:layout_constraintTop_toTopOf="parent" />
 

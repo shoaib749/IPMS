@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     public void openActivity2(){
-        Intent intent =new Intent(MainActivity.this,student_dashboard.class);
+        Intent intent =new Intent(MainActivity.this,Sign_in.class);
         startActivity(intent);
     }
     public void openActivity1(){

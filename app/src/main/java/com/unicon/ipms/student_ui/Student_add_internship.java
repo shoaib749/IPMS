@@ -3,12 +3,19 @@ package com.unicon.ipms.student_ui;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
+import android.renderscript.ScriptGroup;
+import android.view.InflateException;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
 
+import com.google.android.material.progressindicator.BaseProgressIndicator;
 import com.unicon.ipms.R;
+import com.unicon.ipms.databinding.FragmentStudentAddInternshipBinding;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -17,6 +24,8 @@ import com.unicon.ipms.R;
  */
 public class Student_add_internship extends Fragment {
 
+    private Button add;
+    private FragmentStudentAddInternshipBinding binding;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -60,7 +69,15 @@ public class Student_add_internship extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+
+        binding=FragmentStudentAddInternshipBinding.inflate(inflater,container,false);
+        add=binding.BAddDetails;
+        add.setOnClickListener(v->{
+            Fragment fragment = new student_attendence_details();
+            // Insert the fragment by replacing any existing fragment
+            FragmentManager fragmentManager = getFragmentManager();
+            fragmentManager.beginTransaction().replace(getParentFragment().getId(), fragment).commit();
+        });
         return inflater.inflate(R.layout.fragment_student_add_internship, container, false);
     }
 }
