@@ -29,6 +29,7 @@ import com.unicon.ipms.databinding.StudentFragmentHomeBinding;
 import com.unicon.ipms.databinding.StudentFragmentInternshipsBinding;
 import com.unicon.ipms.databinding.StudentFragmentPlacementBinding;
 import com.unicon.ipms.student_ui.Adaptor.recyclerviewadaptor;
+import com.unicon.ipms.student_ui.Adaptor.studentInternshipCurrentAdapter;
 import com.unicon.ipms.student_ui.home.HomeViewModel;
 
 import org.json.JSONArray;
@@ -69,7 +70,7 @@ public class Internships_Fragment extends Fragment {
                             }
                         }
                         company_list.setLayoutManager(new LinearLayoutManager(getContext()));
-                        company_list.setAdapter(new recyclerviewadaptor(arr));
+                        company_list.setAdapter(new studentInternshipCurrentAdapter(arr));
                     }
                 }, new Response.ErrorListener() {
             @Override
@@ -81,28 +82,7 @@ public class Internships_Fragment extends Fragment {
         );
         RequestQueue requestQueue = Volley.newRequestQueue(getContext());
         requestQueue.add(jsonArrayRequest);
-//        arr.add("Capgemini");
-//        arr.add("TCS");
-//        arr.add("Infosys");
-//        arr.add("Infocept");
-//        arr.add("Capgemini");
-//        arr.add("TCS");
-//        arr.add("Infosys");
-//        arr.add("Infocept");
-//        arr.add("Capgemini");
-//        arr.add("TCS");
-//        arr.add("Infosys");
-//        arr.add("Infocept");
-//        arr.add("Capgemini");
-//        arr.add("TCS");
-//        arr.add("Infosys");
-//        arr.add("Infocept");
-//      String[] list={"Capgemini","TCS","Infosys","Infocept","Persistent","Amazon","Google","Facebook"};
-        company_list.setLayoutManager(new LinearLayoutManager(this.getContext()));
-        company_list.setAdapter(new recyclerviewadaptor(arr));
-
         View root = binding.getRoot();
-
         final TextView textView = binding.InternshipsOppurtunitiesTV;
         internshipsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;

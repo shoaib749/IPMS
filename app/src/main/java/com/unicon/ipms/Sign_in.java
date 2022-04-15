@@ -87,6 +87,8 @@ public class Sign_in extends AppCompatActivity {
                                        jsonObject.getString("email_id")
                                );
                                 Toast.makeText(Sign_in.this, "User Login successfully", Toast.LENGTH_SHORT).show();
+                                //fetching more_info data and storing in sharefpref
+                                getSharedMoreData();
                                 startActivity(new Intent(getApplicationContext(),student_dashboard.class));
 //                                Intent intent = new Intent(Sign_in.this,test_data.class);
                             }else{
@@ -115,6 +117,80 @@ public class Sign_in extends AppCompatActivity {
             }
         };
         requestHandler.getInstance(this).addToRequestQueue(stringRequest);
+    }
+    public void getSharedMoreData(){
+        final String email = ET_email.getText().toString().trim();
+        StringRequest stringRequest_1 = new StringRequest(
+                Request.Method.POST,
+                constant.URL_STUDENT_ALL_INFO,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        try {
+                            JSONObject object = new JSONObject(response);
+                            if(!object.getBoolean("error")){
+                                sharepref_moreInfo.getInstance(getApplicationContext()).moreInfo_1(object.getString("fname"),
+                                        object.getString("lname"),
+                                        email,
+                                        object.getString("mobNo"),
+                                        object.getString("par_mobNo"),
+                                        object.getString("dept"),
+                                        object.getString("regNo"),
+                                        object.getString("sem"));
+                                sharepref_moreInfo.getInstance(getApplicationContext()).moreInfo2(
+                                        object.getString("pass10"),
+                                        object.getString("per10"),
+                                        object.getString("pass12"),
+                                        object.getString("per12"),
+                                        object.getString("passDip"),
+                                        object.getString("perDip")
+                                );
+                                sharepref_moreInfo.getInstance(getApplicationContext()).moreInfo3(
+                                        object.getString("admission"),
+                                        object.getString("sgpa1"),
+                                        object.getString("sgpa2"),
+                                        object.getString("sgpa3"),
+                                        object.getString("sgpa4"),
+                                        object.getString("sgpa5"),
+                                        object.getString("sgpa6"),
+                                        object.getString("sgpa7"),
+                                        object.getString("sgpa8"),
+                                        object.getString("avgSgpa"),
+                                        object.getString("passout"),
+                                        object.getString("live"),
+                                        object.getString("dead")
+                                );
+                                sharepref_moreInfo.getInstance(getApplicationContext()).moreInfo4(
+                                        object.getString("option1"),
+                                        object.getString("placement_status"),
+                                        object.getString("gap")
+                                );
+                                Toast.makeText(getApplicationContext(),"Scucces",Toast.LENGTH_SHORT).show();
+                            }else{
+                                Toast.makeText(getApplicationContext(),"Some thing went wrong",Toast.LENGTH_SHORT).show();
+                            }
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                            Toast.makeText(getApplicationContext(),"error"+e,Toast.LENGTH_LONG).show();
+                        }
+
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(getApplicationContext(),error.getMessage(),Toast.LENGTH_LONG).show();
+            }
+        }
+        ){
+            @Nullable
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String,String> params = new HashMap<>();
+                params.put("email_id",email);
+                return params;
+            }
+        };
+        requestHandler.getInstance(getApplicationContext()).addToRequestQueue(stringRequest_1);
     }
 
 }

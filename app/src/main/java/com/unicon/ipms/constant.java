@@ -13,5 +13,7 @@ public class constant {
     public static final String URL_STUDENT_ALL_CURRENT_DRIVE = ROOT_URL+"allCurrentDrive.php";
     public static final String URL_STUDENT_ALL_INTERNSHIP_DRIVE = ROOT_URL+"allIntenshipDrive.php";
     public static final String URL_STUDENT_INTENSHIP_DATE = ROOT_URL+"internshipStartEnd.php";
+    public static final String URL_STUDENT_INTERNSHIP_CURRENT_DRIVE = ROOT_URL+"getcurrentInternship.php";
+    public static final String URL_STUDENT_ALL_INFO = ROOT_URL+"getStudentAllInfo.php";
 
 }

@@ -35,7 +35,6 @@ import java.util.Map;
 public class visiting_student_Company_details extends Fragment {
     private  String c_name;
     private FragmentStudentCompanyDetailsFragmentBinding  binding;
-    private String drive_date,elgi,batch,salary;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,11 +46,12 @@ public class visiting_student_Company_details extends Fragment {
         // Inflate the layout for this fragment
         binding =  FragmentStudentCompanyDetailsFragmentBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-        TextView TVdrive_date,TVeligi,TVbatch,TVsalary;
+        TextView TVdrive_date,TVeligi,TVbatch,TVsalary,TVc_name;
         TVdrive_date = binding.DriveDateET;
         TVeligi = binding.EligibilityCriteriaET;
         TVbatch = binding.BatchET;
         TVsalary = binding.SalaryET;
+        TVc_name = binding.CompanyTV;
         Bundle bundle = this.getArguments();
         if(bundle != null){
             Toast.makeText(getContext(), "C_name"+bundle.getString("c_name"), Toast.LENGTH_SHORT).show();
@@ -73,7 +73,7 @@ public class visiting_student_Company_details extends Fragment {
                                     TVeligi.setText(object.getString("elig_crit"));
                                     TVbatch.setText(object.getString("batch"));
                                     TVsalary.setText(object.getString("sal_lpa"));
-//                                    Log.e("Ma idhar hu",drive_date);
+                                    TVc_name.setText(object.getString("c_name"));
                                 }
                             } catch (JSONException e) {
                                 e.printStackTrace();
