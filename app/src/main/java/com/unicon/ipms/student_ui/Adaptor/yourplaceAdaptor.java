@@ -1,46 +1,50 @@
 package com.unicon.ipms.student_ui.Adaptor;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.unicon.ipms.R;
+import com.unicon.ipms.getStudentPlacementSalModel;
+
+import java.util.List;
 
 public class yourplaceAdaptor extends RecyclerView.Adapter<yourplaceAdaptor.holder> {
+    LayoutInflater inflater;
+    List<getStudentPlacementSalModel> model;
 
-    String data[];
-    String sal[];
-
-    public yourplaceAdaptor(String[] data,String[] sal) {
-        this.data = data;
-        this.sal=sal;
+    public yourplaceAdaptor(Context ctx , List<getStudentPlacementSalModel> model){
+        this.inflater = LayoutInflater.from(ctx);
+        this.model = model;
     }
 
     @NonNull
     @Override
     public holder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-
-        LayoutInflater inflator=LayoutInflater.from(parent.getContext());
-        View view=inflator.inflate(R.layout.fragment_your_placements_student,parent,false);
+        View view = inflater.inflate(R.layout.your_placement_cardview,parent,false);
         return new holder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull holder holder, int position) {
-        String title=data[position];
-        String salary=sal[position];
-        holder.tv.setText(title);
-        holder.salary_1.setText(salary);
+        try{
+        holder.tv.setText(model.get(position).c_name);
+        holder.salary_1.setText(model.get(position).salary);
+        }catch (Exception e){
+            Toast.makeText(holder.tv.getContext(), "error"+e+model.get(position).c_name, Toast.LENGTH_LONG).show();
+        }
 
     }
 
     @Override
     public int getItemCount() {
-        return data.length;
+        return model.size();
     }
 
 
