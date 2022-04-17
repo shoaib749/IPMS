@@ -46,6 +46,7 @@
                     android:textAlignment="center"
                     android:textSize="18sp"
                     android:layout_weight="50"
+                    android:id="@+id/TVUsername"
                     android:text="@string/mansi_1234"/>
             </LinearLayout>
 
@@ -73,6 +74,7 @@
                 android:textAlignment="center"
                 android:textSize="18sp"
                 android:layout_weight="50"
+                android:id="@+id/TVname"
                 android:text="@string/mansi_chitriv"/>
         </LinearLayout>
 
@@ -100,6 +102,7 @@
                 android:padding="3dp"
                 android:textSize="18sp"
                 android:layout_weight="50"
+                android:id="@+id/TVstudent_number"
                 android:text="@string/_7666781735"/>
         </LinearLayout>
 
@@ -127,6 +130,7 @@
                 android:padding="3dp"
                 android:textSize="18sp"
                 android:layout_weight="50"
+                android:id="@+id/TVparents_mobile"
                 android:text="@string/_9823814229"/>
         </LinearLayout>
 
@@ -166,6 +170,7 @@
                 android:padding="3dp"
                 android:textSize="18sp"
                 android:layout_weight="50"
+                android:id="@+id/TVdept"
                 android:text="@string/information_technology"/>
         </LinearLayout>
 
@@ -192,6 +197,7 @@
                 android:padding="3dp"
                 android:text="@string/_6"
                 android:textAlignment="center"
+                android:id="@+id/TVsem"
                 android:textColor="@color/colorPrimary"
                 android:textSize="18sp" />
         </LinearLayout>
@@ -220,6 +226,7 @@
                 android:padding="3dp"
                 android:textSize="18sp"
                 android:layout_weight="50"
+                android:id="@+id/TVregistration_no"
                 android:text="@string/_19010472"/>
         </LinearLayout>
 
@@ -247,6 +254,7 @@
                 android:padding="3dp"
                 android:textSize="18sp"
                 android:layout_weight="50"
+                android:id="@+id/TV10_year"
                 android:text="@string/_2016"/>
         </LinearLayout>
 
@@ -274,6 +282,7 @@
                 android:padding="3dp"
                 android:textSize="18sp"
                 android:layout_weight="50"
+                android:id="@+id/TV10_per"
                 android:text="@string/_90"/>
         </LinearLayout>
 
@@ -301,6 +310,7 @@
                 android:padding="3dp"
                 android:textSize="18sp"
                 android:layout_weight="50"
+                android:id="@+id/TV12_year"
                 android:text="@string/_2018"/>
         </LinearLayout>
 
@@ -328,6 +338,7 @@
                 android:padding="3dp"
                 android:textSize="16sp"
                 android:layout_weight="50"
+                android:id="@+id/TVDip_year"
                 android:text="@string/minus"/>
         </LinearLayout>
 
@@ -355,6 +366,7 @@
                 android:padding="3dp"
                 android:textSize="18sp"
                 android:layout_weight="50"
+                android:id="@+id/TVDip_per"
                 android:text="@string/minus"/>
         </LinearLayout>
 
@@ -382,6 +394,7 @@
                 android:padding="3dp"
                 android:textSize="16sp"
                 android:layout_weight="50"
+                android:id="@+id/TVadmission_year"
                 android:text="@string/_2020"/>
         </LinearLayout>
 
@@ -409,6 +422,7 @@
                 android:padding="3dp"
                 android:textSize="18sp"
                 android:layout_weight="50"
+                android:id="@+id/TVsem1"
                 android:text="@string/_7_5"/>
         </LinearLayout>
 
@@ -436,6 +450,7 @@
                 android:padding="3dp"
                 android:textSize="18sp"
                 android:layout_weight="50"
+                android:id="@+id/TVsem2"
                 android:text="@string/_7_5"/>
         </LinearLayout>
 
@@ -463,6 +478,7 @@
                 android:padding="3dp"
                 android:textSize="18sp"
                 android:layout_weight="50"
+                android:id="@+id/TVsem3"
                 android:text="@string/_7_5"/>
         </LinearLayout>
 
@@ -490,6 +506,7 @@
                 android:padding="3dp"
                 android:textSize="18sp"
                 android:layout_weight="50"
+                android:id="@+id/TVsem4"
                 android:text="@string/_7_5"/>
         </LinearLayout>
 
@@ -517,6 +534,7 @@
                 android:padding="3dp"
                 android:textSize="18sp"
                 android:layout_weight="50"
+                android:id="@+id/TVsem5"
                 android:text="@string/_7_5"/>
         </LinearLayout>
 
@@ -544,6 +562,7 @@
                 android:padding="3dp"
                 android:textSize="18sp"
                 android:layout_weight="50"
+                android:id="@+id/TVsem6"
                 android:text="@string/_7_5"/>
         </LinearLayout>
 
@@ -571,6 +590,7 @@
                 android:padding="3dp"
                 android:textSize="18sp"
                 android:layout_weight="50"
+                android:id="@+id/TVsem7"
                 android:text="@string/_7_5"/>
         </LinearLayout>
 
@@ -598,6 +618,7 @@
                 android:padding="3dp"
                 android:textSize="18sp"
                 android:layout_weight="50"
+                android:id="@+id/TVsem8"
                 android:text="@string/_7_5"/>
         </LinearLayout>
 

@@ -58,17 +58,25 @@
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS10/app/src/main/res/layout/activity_sign_in.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Tawfeek/AndroidStudioProjects/IPMS10/app/src/main/res/layout/activity_splash_screen.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Unicon/StudioProjects/IPMS_02042022/app/src/main/res/drawable/ic_baseline_account_box_24.xml" value="0.1" />
+        <entry key="..\:/Users/Unicon/StudioProjects/IPMS_02042022/app/src/main/res/layout/admin_fragment_check_student_profile.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Unicon/StudioProjects/IPMS_02042022/app/src/main/res/layout/content_student_dashboard.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Unicon/StudioProjects/IPMS_02042022/app/src/main/res/layout/fragment_internship_student_company_details.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Unicon/StudioProjects/IPMS_02042022/app/src/main/res/layout/fragment_student__about__educational_details.xml" value="0.25" />
         <entry key="..\:/Users/Unicon/StudioProjects/IPMS_02042022/app/src/main/res/layout/fragment_student__company_details_fragment.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Unicon/StudioProjects/IPMS_02042022/app/src/main/res/layout/fragment_student_add_internship.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Unicon/StudioProjects/IPMS_02042022/app/src/main/res/layout/fragment_student_attendence_details.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Unicon/StudioProjects/IPMS_02042022/app/src/main/res/layout/fragment_student_company_name_start_end_date.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Unicon/StudioProjects/IPMS_02042022/app/src/main/res/layout/fragment_student_my__internships_fragment.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Unicon/StudioProjects/IPMS_02042022/app/src/main/res/layout/fragment_update__profile__pic__student.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Unicon/StudioProjects/IPMS_02042022/app/src/main/res/layout/fragment_your_placements_student.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Unicon/StudioProjects/IPMS_02042022/app/src/main/res/layout/nav_header_admin_dashboard.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Unicon/StudioProjects/IPMS_02042022/app/src/main/res/layout/nav_header_student_dashboard.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Unicon/StudioProjects/IPMS_02042022/app/src/main/res/layout/student_company_list.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Unicon/StudioProjects/IPMS_02042022/app/src/main/res/layout/student_fragment_home.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Unicon/StudioProjects/IPMS_02042022/app/src/main/res/layout/student_fragment_internship.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Unicon/StudioProjects/IPMS_02042022/app/src/main/res/layout/student_fragment_internships.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Unicon/StudioProjects/IPMS_02042022/app/src/main/res/layout/student_fragment_placement.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Unicon/StudioProjects/IPMS_02042022/app/src/main/res/layout/student_fragment_placement_status.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Unicon/StudioProjects/IPMS_02042022/app/src/main/res/layout/your_placement_cardview.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Unicon/StudioProjects/IPMS_2/app/src/main/res/layout/activity_create_info.xml" value="0.1" />
         <entry key="..\:/Users/Unicon/StudioProjects/IPMS_3/app/src/main/res/layout/activity_admin_dashboard.xml" value="0.20416666666666666" />

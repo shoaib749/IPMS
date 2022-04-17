@@ -7,60 +7,72 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.unicon.ipms.R;
+import com.unicon.ipms.databinding.FragmentStudentAboutEducationalDetailsBinding;
+import com.unicon.ipms.sharepref_moreInfo;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link Student_About_EducationalDetails#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class Student_About_EducationalDetails extends Fragment {
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public Student_About_EducationalDetails() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment Student_About_EducationalDetails.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static Student_About_EducationalDetails newInstance(String param1, String param2) {
-        Student_About_EducationalDetails fragment = new Student_About_EducationalDetails();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
+    private FragmentStudentAboutEducationalDetailsBinding binding;
+    TextView username,name,mobNo,par_mobNo,dept,sem,year_10,per_10,year_12,year_Dip,per_dip,reg_no,sem1,sem2,sem3,sem4,sem5,sem6,sem7,sem8,admision_year;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_student__about__educational_details, container, false);
+        binding = FragmentStudentAboutEducationalDetailsBinding.inflate(inflater,container,false);
+        username=binding.TVUsername;
+        name=binding.TVname;
+        mobNo=binding.TVstudentNumber;
+        par_mobNo=binding.TVparentsMobile;
+        dept=binding.TVdept;
+        sem=binding.TVsem;
+        year_10=binding.TV10Year;
+        year_12=binding.TV12Year;
+        per_10=binding.TV10Per;
+        per_dip=binding.TVDipPer;
+        year_Dip=binding.TVDipYear;
+        sem1=binding.TVsem1;
+        sem2=binding.TVsem2;
+        sem3=binding.TVsem3;
+        sem4=binding.TVsem4;
+        sem5=binding.TVsem5;
+        sem6=binding.TVsem6;
+        sem7=binding.TVsem7;
+        sem8=binding.TVsem8;
+        reg_no=binding.TVregistrationNo;
+        admision_year=binding.TVadmissionYear;
+
+        username.setText(sharepref_moreInfo.getInstance(getContext()).getemail());
+        name.setText(sharepref_moreInfo.getInstance(getContext()).getfname()+" "+sharepref_moreInfo.getInstance(getContext()).getlname());
+        sem.setText(sharepref_moreInfo.getInstance(getContext()).getsemester());
+        year_10.setText(sharepref_moreInfo.getInstance(getContext()).getpass10());
+        year_12.setText(sharepref_moreInfo.getInstance(getContext()).getpass12());
+        year_Dip.setText(sharepref_moreInfo.getInstance(getContext()).getpassDip());
+        sem1.setText(sharepref_moreInfo.getInstance(getContext()).getsgpa1());
+        sem2.setText(sharepref_moreInfo.getInstance(getContext()).getsgpa2());
+        sem3.setText(sharepref_moreInfo.getInstance(getContext()).getsgpa3());
+        sem4.setText(sharepref_moreInfo.getInstance(getContext()).getsgpa4());
+        sem5.setText(sharepref_moreInfo.getInstance(getContext()).getsgpa5());
+        sem6.setText(sharepref_moreInfo.getInstance(getContext()).getsgpa6());
+        sem7.setText(sharepref_moreInfo.getInstance(getContext()).getsgpa7());
+        sem8.setText(sharepref_moreInfo.getInstance(getContext()).getsgpa8());
+        reg_no.setText(sharepref_moreInfo.getInstance(getContext()).getregistration());
+        admision_year.setText(sharepref_moreInfo.getInstance(getContext()).getadmission());
+        dept.setText(sharepref_moreInfo.getInstance(getContext()).getdept());
+        per_10.setText(sharepref_moreInfo.getInstance(getContext()).getper10());
+        per_dip.setText(sharepref_moreInfo.getInstance(getContext()).getperDip());
+        mobNo.setText(sharepref_moreInfo.getInstance(getContext()).getstudentNo());
+        par_mobNo.setText(sharepref_moreInfo.getInstance(getContext()).getparentsNo());
+        View root = binding.getRoot();
+
+//        return inflater.inflate(R.layout.fragment_student__about__educational_details, container, false);
+        return root;
     }
 }

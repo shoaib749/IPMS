@@ -17,7 +17,7 @@ import com.unicon.ipms.databinding.FragmentStudentAttendenceDetailsBinding;
 
 public class student_attendence_details extends Fragment {
     FragmentStudentAttendenceDetailsBinding binding;
-    TextView tvMyInternships;
+    TextView tvMyInternships,TVstudentBio;
 
 
     @Override
@@ -27,11 +27,19 @@ public class student_attendence_details extends Fragment {
         // Inflate the layout for this fragment
         binding = FragmentStudentAttendenceDetailsBinding.inflate(inflater,container,false);
         tvMyInternships = binding.myInternshipTV;
+        TVstudentBio = binding.StudentBiodataTV;
         tvMyInternships.setOnClickListener(view -> {
             Fragment fragment = new student_my_Internships_fragment();
             FragmentManager fragmentManager = getParentFragmentManager();
             fragmentManager.beginTransaction()
                     .replace(getParentFragment().getId(), fragment)
+                    .commit();
+        });
+        TVstudentBio.setOnClickListener(view -> {
+            Fragment fragment = new Student_About_EducationalDetails();
+            FragmentManager fragmentManager = getParentFragmentManager();
+            fragmentManager.beginTransaction()
+                    .replace(getParentFragment().getId(),fragment)
                     .commit();
         });
         return binding.getRoot();
