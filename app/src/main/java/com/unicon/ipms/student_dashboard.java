@@ -1,13 +1,17 @@
 package com.unicon.ipms;
 
+import android.app.FragmentManager;
 import android.os.Bundle;
+import android.text.style.UpdateAppearance;
 import android.view.View;
 import android.view.Menu;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -16,6 +20,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.unicon.ipms.databinding.ActivityStudentDashboardBinding;
+import com.unicon.ipms.student_ui.Update_Profile_Pic_Student;
 
 
 public class student_dashboard extends AppCompatActivity {
@@ -43,6 +48,13 @@ public class student_dashboard extends AppCompatActivity {
         NavigationUI.setupWithNavController(navigationView, navController);
         TextView textView=headerView.findViewById(R.id.Student_name_TV);
         textView.setText(sharedPrefManager.getInstance(this).getfname() + " " + sharedPrefManager.getInstance(this).getlname());
+//        ImageView imageView = headerView.findViewById(R.id.student_IV);
+//        imageView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                transit();
+//            }
+//        });
     }
 
     @Override
@@ -58,5 +70,12 @@ public class student_dashboard extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+//    public void transit(){
+//        Fragment fragment = new Update_Profile_Pic_Student();
+//        FragmentManager fragmentManager = getFragmentManager();
+//        fragmentManager.beginTransaction()
+//                .replace(,fragment)
+//                .commit();
+//    }
 
 }

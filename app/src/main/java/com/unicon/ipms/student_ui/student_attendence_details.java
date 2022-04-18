@@ -36,7 +36,7 @@ public class student_attendence_details extends Fragment {
                     .commit();
         });
         TVstudentBio.setOnClickListener(view -> {
-            Fragment fragment = new Student_About_EducationalDetails();
+            Fragment fragment = new Update_Profile_Pic_Student();
             FragmentManager fragmentManager = getParentFragmentManager();
             fragmentManager.beginTransaction()
                     .replace(getParentFragment().getId(),fragment)
