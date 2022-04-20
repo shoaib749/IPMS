@@ -38,6 +38,7 @@ public class sharepref_moreInfo {
     private static final String KEY_USER_option1="option1";
     private static final String KEY_USER_placement_status="placement_status";
     private static final String KEY_USER_gap="gap";
+    private static final String KEY_USER_PROFILE_URL = "profile_url";
 
     private sharepref_moreInfo(Context context) {
         ctx = context;
@@ -105,6 +106,17 @@ public class sharepref_moreInfo {
         editor.putString(KEY_USER_gap,gap);
         editor.apply();
         return true;
+    }
+    public boolean setProfile_url(String profile_url){
+        SharedPreferences sharedPreferences = ctx.getSharedPreferences(SHARED_PREF_NAME,Context.MODE_PRIVATE);
+        SharedPreferences.Editor  editor = sharedPreferences.edit();
+        editor.putString(KEY_USER_PROFILE_URL,profile_url);
+        editor.apply();
+        return true;
+    }
+    public String getKeyUserProfileUrl(){
+        SharedPreferences sharedPreferences = ctx.getSharedPreferences(SHARED_PREF_NAME,Context.MODE_PRIVATE);
+        return sharedPreferences.getString(KEY_USER_PROFILE_URL,null);
     }
     public String getfname(){
         SharedPreferences sharedPreferences = ctx.getSharedPreferences(SHARED_PREF_NAME,Context.MODE_PRIVATE);

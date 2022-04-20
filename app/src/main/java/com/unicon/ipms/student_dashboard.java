@@ -3,6 +3,7 @@ package com.unicon.ipms;
 import android.app.FragmentManager;
 import android.os.Bundle;
 import android.text.style.UpdateAppearance;
+import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.widget.ImageView;
@@ -19,6 +20,7 @@ import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.squareup.picasso.Picasso;
 import com.unicon.ipms.databinding.ActivityStudentDashboardBinding;
 import com.unicon.ipms.student_ui.Update_Profile_Pic_Student;
 
@@ -27,6 +29,7 @@ public class student_dashboard extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityStudentDashboardBinding binding;
+    private String image_path;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,14 +50,13 @@ public class student_dashboard extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
         TextView textView=headerView.findViewById(R.id.Student_name_TV);
+        ImageView imageView = headerView.findViewById(R.id.student_IV);
         textView.setText(sharedPrefManager.getInstance(this).getfname() + " " + sharedPrefManager.getInstance(this).getlname());
-//        ImageView imageView = headerView.findViewById(R.id.student_IV);
-//        imageView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                transit();
-//            }
-//        });
+        image_path = sharepref_moreInfo.getInstance(this).getKeyUserProfileUrl();
+        Picasso.get()
+                .load(image_path)
+                .transform(new CircleTransform())
+                .into(imageView);
     }
 
     @Override

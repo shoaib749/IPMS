@@ -18,5 +18,7 @@ public class constant {
     public static final String URL_STUDENT_ALL_INFO = ROOT_URL+"getStudentAllInfo.php";
     public static final String URL_STUDENT_PLACEMENT_SAL = ROOT_URL+"studentPlacmentCompanySal.php";
     public static final String URL_STUDENT_PROFILE_PIC = ROOT_URL+"uploadImage.php";
+    public static final String URL_STUDENT_FETCH_PROFILE_PIC = ROOT_URL+"fetchStudentProfilePic.php";
+
 
 }
