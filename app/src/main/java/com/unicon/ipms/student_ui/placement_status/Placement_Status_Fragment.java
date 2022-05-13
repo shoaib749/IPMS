@@ -34,8 +34,7 @@ public class Placement_Status_Fragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         getActivity().setTitle("Placement Status");
-        PlacementStatusViewModel placementStatusViewModel =
-                new ViewModelProvider(this).get(PlacementStatusViewModel.class);
+        PlacementStatusViewModel placementStatusViewModel =new ViewModelProvider(this).get(PlacementStatusViewModel.class);
 
         binding =  StudentFragmentPlacementStatusBinding.inflate(inflater, container, false);
         View root = binding.getRoot();

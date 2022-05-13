@@ -44,7 +44,7 @@
     <fragment
         android:id="@+id/nav_your_placements"
         android:name="com.unicon.ipms.student_ui.fragment_your_placements_student"
-        android:label="My Internship"
+        android:label="Your Placements"
         tools:layout="@layout/fragment_your_placements_student" />
 
 </navigation>

@@ -111,7 +111,7 @@ public class Update_Profile_Pic_Student extends Fragment {
                                 if(object.getString("profile_img") == ""){
                                     Toast.makeText(getContext(), "no profile_pic", Toast.LENGTH_SHORT).show();
                                 }else{
-                                    image_path  = "http://192.168.29.240/IPMS_Script/images/"+object.getString("profile_img");
+                                    image_path  = "http://192.168.84.154/IPMS/source/modules/profile_img"+object.getString("profile_img");
                                     sharepref_moreInfo.getInstance(getContext()).setProfile_url(image_path);
                                     Log.e("Path",image_path);
                                     Picasso.get()

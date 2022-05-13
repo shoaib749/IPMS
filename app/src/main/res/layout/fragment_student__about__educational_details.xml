@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".student_ui.Student_About_EducationalDetails">
 
     <LinearLayout
@@ -302,6 +303,8 @@
                 android:layout_weight="50"
                 android:text="@string/_12th_year_of_passing"/>
 
+
+
             <TextView
                 android:layout_width="0dp"
                 android:textAlignment="center"
@@ -312,6 +315,36 @@
                 android:layout_weight="50"
                 android:id="@+id/TV12_year"
                 android:text="@string/_2018"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:text="@string/_12th_percentage"/>
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:padding="3dp"
+                android:textSize="18sp"
+                android:layout_weight="50"
+                android:id="@+id/TV12_per"
+                android:text="@string/_80"/>
         </LinearLayout>
 
         <LinearLayout

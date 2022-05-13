@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/total_placement_offers_constraint"
         android:layout_width="300dp"
-        android:layout_height="150dp"
+        android:layout_height="125dp"
         android:layout_marginTop="52dp"
         android:background="@drawable/rectangle"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,7 +64,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout3"
         android:layout_width="300dp"
-        android:layout_height="150dp"
+        android:layout_height="125dp"
         android:layout_marginTop="52dp"
         android:background="@drawable/rectangle"
         app:layout_constraintEnd_toEndOf="parent"
@@ -117,7 +117,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="300dp"
-        android:layout_height="150dp"
+        android:layout_height="125dp"
         android:layout_marginTop="50dp"
         android:background="@drawable/rectangle"
         app:layout_constraintBottom_toBottomOf="parent"
